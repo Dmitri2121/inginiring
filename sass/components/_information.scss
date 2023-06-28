@@ -1,0 +1,88 @@
+.information-content__title {
+    @include font ('Oswald', 59px, 42px, 700);
+    text-align: center;
+    color: $color-text;
+    &::after {
+        position: relative;
+        content: url(/img/information/01.svg);
+        bottom: 10px;
+        left: 60px;
+    }
+    &::before {
+        position: relative;
+        content: url(/img/information/02.svg);
+        right: 60px;
+        bottom: 10px;
+    }
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.projects:hover {
+    cursor: pointer;
+    outline: 5px solid $background-color-numbers;
+    border-radius: 10px;
+    filter: blur(1px);
+    transition: color .5s;
+}
+
+.projects__link {
+    display: flex;
+    align-items: flex-end;
+    background-image: url(/img/information/03.png);
+    width: 416px;
+    height: 540px;
+    text-decoration: none;
+}
+
+.projects__text {
+    @include font('Oswald', 34px, 24px, 700);
+    padding-left: 50px;
+    padding-bottom: 50px;
+    color: $color-text
+}
+
+.projects__item {
+    @include font ('Oswald', 34px, 24px, 700);
+    padding-bottom: 50px;
+    padding-left: 50px;
+    color: $color-text;
+}
+
+
+
+.blocks{
+    &__link {
+        display: flex;
+        align-items: flex-end;
+        background-image: url(/img/information/04.png);
+        width: 416px;
+        height: 258px;
+        text-decoration: none;
+        @include font ('Oswald', 34px, 24px, 700);
+        padding-bottom: 50px;
+        padding-left: 50px;
+        color: $color-text;
+    }
+    &__link:hover {
+        cursor: pointer;
+        outline: 5px solid $background-color-numbers;
+        border-radius: 10px;
+        filter: blur(1px);
+        transition: color .5s;
+    }
+    &__link:first-child {
+        margin-bottom: 24px;
+    }
+    &__link:last-child {
+        margin-bottom: 0;
+    }
+}
+
+

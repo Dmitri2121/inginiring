@@ -1,0 +1,38 @@
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map {
+    border-radius: 10px;
+    width: 500px;
+}
+
+.contact {
+    display: flex;
+    justify-content:space-between;
+}
+
+.contact__item {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-color-numbers;
+    width: 23%;
+    border-radius: 8px;
+}
+
+.contact__title {
+    @include font ('Oswald', 35px, 22px, 500);
+    color: $color-text;
+    text-align: center;
+}
+
+.contact__text {
+    @include font ('Oswald', 35px, 24px, 500);
+    color: $color-text;
+    text-align: center;
+
+}

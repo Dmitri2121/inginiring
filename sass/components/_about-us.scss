@@ -1,0 +1,74 @@
+.about-us-content {
+    background-image: url(/img/logo/01.png);
+    width: 1296px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-us-content__position {
+    position: relative;
+}
+
+.about-us-content__title {
+    @include font ('Oswald', 33.6px, 24px, 700);
+    color: $color-text;
+    &::before {
+        content: url(/img/logo/02.svg);
+        margin-right: 66px;
+    }
+    &::after {
+        content: url(/img/logo/03.svg);
+        margin-left: 66px;
+    }
+}
+
+.about-us-content__subtitle {
+    @include font ('Oswald', 89.6px, 70px, 700);
+    color: $color-text;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.about-us-content__text {
+    @include font ('Oswald', 70px, 33px, 500);
+    color: $color-text;
+    text-align: center;
+    margin-top: 0;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+    height: 300px;
+}
+
+.numbers__item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+    border-radius: 20px;
+    justify-content:flex-start;
+    width: 23%;
+    background-color: $numbers-item-background;
+}
+
+.numbers__title {
+    @include font ('Oswald', 107px, 72px, 500);
+    margin: 0;
+    text-align: center;
+    color: $background-color;
+}
+
+.numbers__subtitle {
+    @include font ('Oswald', 40px, 30px, 500);
+    margin: 0;
+    text-align: center;
+    color: $background-color;
+}
+
+
+
