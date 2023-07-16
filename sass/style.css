@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -311,6 +312,7 @@ body {
 
 .header-content {
   display: flex;
+  align-items: center;
 }
 
 .header-content__wrapper {
@@ -320,6 +322,11 @@ body {
 
 .nav {
   margin: 0 auto;
+}
+
+.logo__image {
+  width: 170px;
+  height: 140px;
 }
 
 .nav__content {
@@ -334,7 +341,7 @@ body {
 .nav__link {
   font-family: "Oswald";
   line-height: 19px;
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 400;
   text-decoration: none;
   color: #FFFFFF;
@@ -346,17 +353,14 @@ body {
 }
 
 .about-us-content {
-  background-image: url(/img/logo/01.png);
-  width: 1296px;
-  height: 600px;
+  background-image: url(/img/about-us/background-about-us.jpg);
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.about-us-content__position {
-  position: relative;
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 .about-us-content__title {
@@ -432,6 +436,10 @@ body {
   color: #162831;
 }
 
+.header-content_bordered {
+  border-bottom: 2px solid #FFFFFF;
+}
+
 .information-content__title {
   font-family: "Oswald";
   line-height: 59px;
@@ -457,6 +465,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  height: 540px;
+}
+
+.cards-box:first-child {
+  background-image: url(/img/information/01.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.cards-box:last-child {
+  background-image: url(/img/information/02.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.cards-box:nth-child(2) .projects:first-child {
+  background-image: url(/img/information/03.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.cards-box:nth-child(2) .projects:last-child {
+  background-image: url(/img/information/04.jpg);
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .projects:hover {
@@ -470,10 +504,19 @@ body {
 .projects__link {
   display: flex;
   align-items: flex-end;
-  background-image: url(/img/information/03.png);
   width: 416px;
   height: 540px;
   text-decoration: none;
+  border-radius: 10px;
+}
+
+.projects__item {
+  display: flex;
+  align-items: flex-end;
+  width: 416px;
+  height: 250px;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 .projects__text {
@@ -482,129 +525,63 @@ body {
   font-size: 24px;
   font-weight: 700;
   padding-left: 50px;
-  padding-bottom: 50px;
+  padding-top: 15px;
   color: #FFFFFF;
-}
-
-.projects__item {
-  font-family: "Oswald";
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: 700;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  color: #FFFFFF;
-}
-
-.blocks__link {
-  display: flex;
-  align-items: flex-end;
-  background-image: url(/img/information/04.png);
-  width: 416px;
-  height: 258px;
-  text-decoration: none;
-  font-family: "Oswald";
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: 700;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  color: #FFFFFF;
-}
-.blocks__link:hover {
-  cursor: pointer;
-  outline: 5px solid #018ABE;
-  border-radius: 10px;
-  filter: blur(1px);
-  transition: color 0.5s;
-}
-.blocks__link:first-child {
-  margin-bottom: 24px;
-}
-.blocks__link:last-child {
-  margin-bottom: 0;
-}
-
-.items {
-  display: flex;
-}
-
-.items .item {
-  transform: translate(-50%, -50%);
-  width: 900px;
-  height: 900px;
-  overflow: hidden;
-  transition: all 300ms ease-in-out;
-  opacity: 0;
-}
-
-.item.active {
-  opacity: 1;
-  z-index: 99;
-  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
-}
-
-.item.prev {
-  z-index: 2;
-  opacity: 0.25;
-  transform: translate(-125%, -50%);
-}
-
-.item.next {
-  z-index: 2;
-  opacity: 0.25;
-  transform: translate(25%, -50%);
-}
-
-.items .button-container {
-  transform: translate(-50%, -50%);
-  width: 275px;
-}
-
-.button-container .button {
-  color: #fff;
-  font-size: 32px;
-  cursor: pointer;
-  opacity: 0.75;
-  transition: all 300ms ease-in-out;
-}
-
-.button-container .button:hover {
-  opacity: 1;
-}
-
-.button-container .button:before {
-  content: "";
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 50%;
-  z-index: -99;
-}
-
-.button-container .button:nth-child(1) {
-  float: left;
-}
-
-.button-container .button:nth-child(2) {
-  float: right;
-}
-
-.background {
-  background-image: url(/img/feedback/portfolio.jpg);
+  background-color: rgba(39, 47, 51, 0.7);
   width: 100%;
-  height: 400px;
+  height: 80px;
+  border-radius: 10px;
 }
 
-.background__block {
-  margin-top: 40px;
+.cards-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 540px;
+}
+
+.swiper-navBtn {
+  color: #6E93f7;
+  transition: color 0.3s ease;
+  right: 0;
+}
+
+.swiper-navBtn:hover {
+  color: #4070F4;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4070F4;
+}
+
+.swiper__image {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.image-content {
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-navBtn {
+    display: none;
+  }
+}
+.background-block {
+  background-image: url(/img/feedback/portfolio.jpg);
+  height: 407px;
+  width: 100%;
 }
 
 .footer-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .map {
@@ -615,16 +592,25 @@ body {
 .contact {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 40%;
 }
 
 .contact__item {
-  padding: 25px;
+  width: 47%;
+  padding: 7px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #018ABE;
-  width: 23%;
   border-radius: 8px;
+}
+.contact__item:nth-child(1) {
+  margin-bottom: 20px;
+}
+.contact__item:nth-child(2) {
+  margin-bottom: 20px;
 }
 
 .contact__title {
@@ -636,6 +622,10 @@ body {
   text-align: center;
 }
 
+.contact__subtitle {
+  margin: 0;
+}
+
 .contact__text {
   font-family: "Oswald";
   line-height: 35px;
@@ -643,4 +633,186 @@ body {
   font-weight: 500;
   color: #FFFFFF;
   text-align: center;
+}
+
+.google-map {
+  overflow: hidden;
+  padding-bottom: 36%;
+  position: relative;
+  height: 0;
+  z-index: 2;
+}
+
+.google-map__content {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-services__item {
+  font-family: "Oswald";
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.blocks__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin-left: 50px;
+}
+
+.blocks__number {
+  position: absolute;
+  top: 2px;
+  left: -61px;
+  font-family: "Oswald";
+  line-height: 240px;
+  font-size: 215px;
+  font-weight: 700;
+  margin: 0;
+  color: #FFFFFF;
+  opacity: 10%;
+}
+
+.blocks__title {
+  font-family: "Oswald";
+  line-height: 76px;
+  font-size: 56px;
+  font-weight: 600;
+  margin-top: 0;
+  color: #FFFFFF;
+  width: 47vw;
+}
+
+.blocks__text {
+  font-family: "Oswald";
+  line-height: 32px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  color: #FFFFFF;
+  width: 45vw;
+}
+
+.blocks__image {
+  width: 480px;
+  height: 640px;
+}
+
+.our-projects-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-images__image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 416px;
+  height: 230px;
+  transition: 1s;
+}
+
+.project-images__image:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.project-images__title {
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Oswald";
+  line-height: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  width: 390px;
+}
+
+.project-images__content {
+  margin-bottom: 40px;
+}
+
+/* Стили для модального окна */
+.modal {
+  display: none;
+  /* По умолчанию скрыто */
+  position: fixed;
+  /* Фиксированное положение */
+  z-index: 5;
+  /* Верхний уровень */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Полная ширина */
+  height: 100%;
+  /* Полная высота */
+  overflow: auto;
+  /* Включить прокрутку, если необходимо */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Черный цвет с прозрачностью */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 60vw;
+}
+
+.modal-content__img {
+  width: 100%;
+  height: auto;
+}
+
+.blocks-documents__item {
+  position: relative;
+}
+
+.blocks-documents__images {
+  width: 400px;
+  position: absolute;
+  z-index: 2;
+  transition: 0.6s;
+  border: 5px solid #018ABE;
+  border-radius: 15px;
+}
+.blocks-documents__images:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.blocks-documents__images:nth-child(2) {
+  width: 400px;
+  position: absolute;
+  top: -45px;
+  left: 45px;
+  z-index: 1;
+  transition: 0.6s;
+  border: 5px solid #018ABE;
+  border-radius: 15px;
+}
+.blocks-documents__images:nth-child(2):hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.blocks-documents__img {
+  width: 400px;
+  transition: 0.6s;
+  border: 5px solid #018ABE;
+  border-radius: 15px;
+}
+.blocks-documents__img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

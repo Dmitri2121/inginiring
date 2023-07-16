@@ -1,20 +1,20 @@
 .about-us-content {
-    background-image: url(/img/logo/01.png);
-    width: 1296px;
-    height: 600px;
+    background-image: url(/img/about-us/background-about-us.jpg);
+    background-size:cover ; 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 50px;
+    padding-top: 20px;
 }
 
-.about-us-content__position {
-    position: relative;
-}
+
 
 .about-us-content__title {
     @include font ('Oswald', 33.6px, 24px, 700);
     color: $color-text;
+    
     &::before {
         content: url(/img/logo/02.svg);
         margin-right: 66px;
@@ -69,6 +69,18 @@
     text-align: center;
     color: $background-color;
 }
+
+
+//О Нас
+
+.header-content_bordered {
+    border-bottom: 2px solid $color-text;
+}
+
+
+
+
+
 
 
 

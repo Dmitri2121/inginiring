@@ -1,0 +1,45 @@
+.block {
+    display: flex;
+    justify-content: space-between
+}
+.our-services__item {
+    @include font ('Oswald', 34px, 24px, 700);
+    color: $color-text;
+}
+
+.blocks__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-left: 50px;
+}
+
+.blocks__number {
+    position: absolute;
+    top: 2px;
+    left: -61px;
+    @include font ('Oswald', 240px, 215px, 700);
+    margin: 0;
+    color: $color-text;
+    opacity: 10%;
+}
+
+.blocks__title {
+    @include font ('Oswald', 76px, 56px, 600);
+    margin-top: 0;
+    color: $color-text;
+    width: 47vw;
+}
+
+.blocks__text {
+    @include font ('Oswald', 32px, 18px, 700);
+    margin: 0;
+    color: $color-text;
+    width: 45vw;
+}
+
+.blocks__image {
+    width: 480px;
+    height: 640px;
+}

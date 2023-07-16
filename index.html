@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./sass/style.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/sass/style.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="/sass/swiper-bundle.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,17 +29,17 @@
       <div class="wrapper">
         <div class="header-content header-content__wrapper">
           <div class="logo">
-            <img src="./img/header/Group 1.svg" alt="logo" />
+            <img class="logo__image" src="/img/header/logo (1).png" alt="logo" />
           </div>
 
           <div class="nav">
             <ul class="nav__content">
               <li class="nav__item">
-                <a class="nav__link" href="">Главная</a>
+                <a class="nav__link" href="/index.html">Главная</a>
               </li>
-              <li class="nav__item"><a class="nav__link" href="">О нас</a></li>
+              <li class="nav__item"><a class="nav__link" href="/about-us/about-us.html">О нас</a></li>
               <li class="nav__item">
-                <a class="nav__link" href="">Наши услуги</a>
+                <a class="nav__link" href="/our-services.html">Наши услуги</a>
               </li>
               <li class="nav__item"><a class="nav__link" href="">Отзывы</a></li>
               <li class="nav__item">
@@ -49,8 +53,8 @@
     <main class="main">
       <section class="about-us">
         <div class="wrapper">
-          <div class="about-us-content about-us-content__position">
-            <h3 class="about-us-content__title">Проектируем ваши мечты</h3>
+          <div class="about-us-content">
+            <h3 class="about-us-content__title">Клиент будет доволен!</h3>
             <h1 class="about-us-content__subtitle">СТРОЙИНЖИНИРИНГ</h1>
             <p class="about-us-content__text">ПРОЕКТНО-СТРОИТЕЛЬНАЯ ГРУППА</p>
 
@@ -86,25 +90,35 @@
           </div>
 
           <div class="cards">
-            <div class="projects">
-              <a class="projects__link" href=""
-                ><span class="projects__text">ПРОЕКТЫ</span></a
-              >
+
+            <div class="cards-box">
+              <div class="projects">
+                <a class="projects__link" href="/our-projects.html"><span class="projects__text">ПРОЕКТЫ</span></a>             
+              </div>
+            </div>
+            
+
+            <div class="cards-box">
+              <div class="projects">
+                <a class="projects__item" href="/our-license.html"><span class="projects__text">ЛИЦЕНЗИИ</span></a>             
+              </div>
+  
+              <div class="projects">
+                <a class="projects__item" href=""><span class="projects__text">АТТЕСТАТЫ</span></a>             
+              </div>
             </div>
 
-            <div class="blocks">
-              <a class="blocks__link" href=""
-                ><span class="blocks__text">АТТЕСТАТЫ</span></a
-              >
-              <a class="blocks__link" href=""
-                ><span class="blocks__text">ЛИЦЕНЗИИ</span></a
-              >
+            <div class="cards-box">
+              <div class="projects">
+                <a class="projects__link" href=""><span class="projects__text">ПАРТНЕРЫ</span></a>             
+              </div>
             </div>
-            <div class="blocks">
-              <a class="blocks__link" href=""
-                ><span class="blocks__text">ПАРТНЕРЫ</span></a
-              >
-            </div>
+
+            
+
+           
+
+            
           </div>
         </div>
       </section>
@@ -114,48 +128,132 @@
           <div class="information-content">
             <h2 class="information-content__title">ОТЗЫВЫ</h2>
           </div>
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="image-content">
+                  <img class="swiper__image"
+                    src="/img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <div class="image-content">
+                  <img class="swiper__image"
+                  src="/img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                  alt=""
+                  />
+                </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <div class="image-content">
+                  <img class="swiper__image"
+                  src="/img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                  alt=""
+                  />
+                </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <div class="image-content">
+                  <img class="swiper__image"
+                  src="/img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                  alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-content">
+                  <img class="swiper__image"
+                  src="/img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                  alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-content">
+                  <img class="swiper__image"
+                  src="/img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                  alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-content">
+                  <img class="swiper__image"
+                  src="/img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                  alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-content">
+                  <img class="swiper__image"
+                  src="/img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                  alt=""
+                  />
+                </div>
+              </div>
+            </div>
+      
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+          </div>
           
-
         </div>
-        <div class="background background__block"></div>
+        <div class="background-block"></div>
+
       </section>
-
-
     </main>
 
     <footer class="footer">
-        <div class="wrapper">
-            <div class="information-content">
-                <h2 class="information-content__title">КОНТАКТЫ</h2>
-            </div>
-            <div class="footer-content">
-                <div class="contact">
-                    <div class="contact__item">
-                        <img  class="contact__icon" src="/img/footer/place.svg" alt="">
-                        <h3 class="contact__title">АДРЕС:</h3>
-                        <h3 class="contact__subtitle">БРЕСТ ФОМИНА 17</h3>
-                    </div>
-                    <div class="contact__item">
-                        <img  class="contact__icon" src="/img/footer/phone.svg" alt="">
-                        <h3 class="contact__title">ТЕЛЕФОН:</h3>
-                        <h3 class="contact__subtitle">+375 44 585 17 85 (A1)</h3>
-                    </div>
-                    <div class="contact__item">
-                        <img  class="contact__icon" src="/img/footer/clock.svg" alt="">
-                        <h3 class="contact__title">ВРЕМЯ РАБОТЫ:</h3>
-                        <h3 class="contact__subtitle">ПН - СБ 10:00 - 20:00</h3>
-                    </div>
-                    <div class="contact__item">
-                        <img  class="contact__icon" src="/img/footer/sms.svg" alt="">
-                        <h3 class="contact__title">E-MAIL:</h3>
-                        <h3 class="contact__subtitle">info@gmail.com</h3>
-                    </div>
-                </div>
-                <img  class="map" src="/img/footer/map.jpg" alt="">
-
-            </div>
+      <div class="wrapper">
+        <div class="information-content">
+          <h2 class="information-content__title">КОНТАКТЫ</h2>
         </div>
+        <div class="footer-content">
+          <div class="contact">
+            <div class="contact__item">
+              <img class="contact__icon" src="/img/footer/place.svg" alt="" />
+              <h3 class="contact__title">АДРЕС:</h3>
+              <h3 class="contact__subtitle">г.БРЕСТ, ул.ГОБК, 7</h3>
+            </div>
+            <div class="contact__item">
+              <img class="contact__icon" src="/img/footer/phone.svg" alt="" />
+              <h3 class="contact__title">СВЯЗАТЬСЯ С НАМИ:</h3>
+              <h3 class="contact__subtitle">Моб: <a class="contact__link" href="tel:+375445851785">+375 44 585 17 85 (A1)</a> <a class="contact__link" href="tel:+375297275739">+375 29 727 57 39 (МТС)</a></h3>
+              <h3 class="contact__subtitle">Тел: <a class="contact__link" href="tel:+375162574142">+375 162 57 41 42</a></h3>
+              <h3 class="contact__subtitle">Факс: <a class="contact__link" href="tel:+375162574147">+375 162 57 41 47</a></h3>
+            </div>
+            <div class="contact__item">
+              <img class="contact__icon" src="/img/footer/clock.svg" alt="" />
+              <h3 class="contact__title">ВРЕМЯ РАБОТЫ:</h3>
+              <h3 class="contact__subtitle">ПН - СБ 08:00 - 18:00</h3>
+            </div>
+            <div class="contact__item">
+              <img class="contact__icon" src="/img/footer/sms.svg" alt="" />
+              <h3 class="contact__title">E-MAIL:</h3>
+              <h3 class="contact__subtitle"><a href="mailto:psgstroyinginiring@gmail.com">psgstroyinginiring@gmail.com</a></h3>
+            </div>
+          </div>
+          
+        <div class="google-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.0876009594726!2d23.676184775981124!3d52.09633726751072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210b27255e9093%3A0xbed6ae5fde46e5d!2z0J_RgNC-0LXQutGC0L3Qvi3RgdGC0YDQvtC40YLQtdC70YzQvdCw0Y8g0LPRgNGD0L_Qv9CwINCh0YLRgNC-0LnQuNC90LbQuNC90LjRgNC40L3Qsw!5e0!3m2!1sru!2sby!4v1688120221695!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </div>
+        </div>
+      </div>
     </footer>
-    <script src="/index.js"></script>
+
+    
+    
+    <!-- Swiper JS -->
+    <script src="/js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
   </body>
 </html>

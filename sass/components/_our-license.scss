@@ -1,0 +1,44 @@
+
+
+.blocks-documents__item {
+    position: relative;
+    
+}
+
+.blocks-documents__images {
+    width: 400px;
+    position: absolute;
+    z-index: 2;
+    transition: .6s;
+    border: 5px solid $background-color-numbers;
+    border-radius: 15px;
+    &:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    &:nth-child(2) {
+    width: 400px;
+    position: absolute;
+    top: -45px;
+    left: 45px;
+    z-index: 1;
+    transition: .6s;
+    border: 5px solid $background-color-numbers;
+    border-radius: 15px;
+    &:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    }
+}
+
+.blocks-documents__img {
+    width: 400px;
+    transition: .6s;
+    border: 5px solid $background-color-numbers;
+    border-radius: 15px;
+    &:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+}

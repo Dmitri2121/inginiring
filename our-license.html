@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/sass/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+          <div class="header-content header-content__wrapper">
+            <div class="logo">
+              <img class="logo__image" src="/img/header/logo (1).png" alt="logo" />
+            </div>
+  
+            <div class="nav">
+              <ul class="nav__content">
+                <li class="nav__item">
+                  <a class="nav__link" href="/index.html">Главная</a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="/about-us/about-us.html">О нас</a></li>
+                <li class="nav__item">
+                  <a class="nav__link" href="/our-services.html">Наши услуги</a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="">Отзывы</a></li>
+                <li class="nav__item">
+                  <a class="nav__link" href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="our-license">
+        <div class="wrapper">
+            <div class="our-license-content">
+                <h2 class="information-content__title">НАШИ ЛИЦЕНЗИИ</h2>
+                <div class="blocks-documents">
+
+                    
+                        <div class="blocks-documents__item">
+                            <img src="/img/лицензии/АТТЕСТАТЫ_page-0001.jpg" alt="" class="blocks-documents__images" onclick="displayModal(this);">
+                            <img src="/img/лицензии/АТТЕСТАТЫ_page-0002.jpg" alt="" class="blocks-documents__images" onclick="displayModal(this);">
+                        </div>
+                    
+
+                    
+                        <div class="blocks-documents__item">
+                            <img src="/img/лицензии/АТТЕСТАТЫ_page-0001.jpg" alt="" class="blocks-documents__images" onclick="displayModal(this);">
+                            <img src="/img/лицензии/АТТЕСТАТЫ_page-0002.jpg" alt="" class="blocks-documents__images" onclick="displayModal(this);">
+                        </div>
+                    
+                        
+                    
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+                <!-- Модальное окно -->
+            <div id="modal" class="modal" onclick="hideModal();">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                  <img class="modal-content__img" id="modal-image">
+                </div>
+            </div>
+            </div>
+
+            
+            
+        </div>
+      </section>
+      <script src="/js/modal.js"></script>
+</body>
+</html>

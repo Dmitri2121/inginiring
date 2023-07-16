@@ -1,0 +1,65 @@
+
+.our-projects-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-images__image {
+    object-fit: contain;
+    width: 416px;
+    height: 230px;
+    transition: 1s;
+}
+
+.project-images__image:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.project-images__title {
+    text-align: center;
+    margin: 0 auto;
+    @include font ('Oswald', 18px, 20px, 700);
+    color: $color-text;
+    width: 390px;
+}
+
+.project-images__content {
+    margin-bottom: 40px;
+}
+
+
+ /* Стили для модального окна */
+ .modal {
+    display: none;
+    /* По умолчанию скрыто */
+    position: fixed;
+    /* Фиксированное положение */
+    z-index: 5;
+    /* Верхний уровень */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Полная ширина */
+    height: 100%;
+    /* Полная высота */
+    overflow: auto;
+    /* Включить прокрутку, если необходимо */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Черный цвет с прозрачностью */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 60vw;
+}
+
+.modal-content__img {
+    width: 100%;
+    height: auto;
+}
+
+
+
