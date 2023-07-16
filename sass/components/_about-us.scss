@@ -1,5 +1,5 @@
 .about-us-content {
-    background-image: url(/img/about-us/background-about-us.jpg);
+    background-image: url(/inginiring/img/about-us/background-about-us.jpg);
     background-size:cover ; 
     display: flex;
     justify-content: center;
@@ -16,11 +16,11 @@
     color: $color-text;
     
     &::before {
-        content: url(/img/logo/02.svg);
+        content: url(/inginiring/img/logo/02.svg);
         margin-right: 66px;
     }
     &::after {
-        content: url(/img/logo/03.svg);
+        content: url(/inginiring/img/logo/03.svg);
         margin-left: 66px;
     }
 }

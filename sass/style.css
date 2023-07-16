@@ -353,7 +353,7 @@ body {
 }
 
 .about-us-content {
-  background-image: url(/img/about-us/background-about-us.jpg);
+  background-image: url(/inginiring/img/about-us/background-about-us.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -371,11 +371,11 @@ body {
   color: #FFFFFF;
 }
 .about-us-content__title::before {
-  content: url(/img/logo/02.svg);
+  content: url(/inginiring/img/logo/02.svg);
   margin-right: 66px;
 }
 .about-us-content__title::after {
-  content: url(/img/logo/03.svg);
+  content: url(/inginiring/img/logo/03.svg);
   margin-left: 66px;
 }
 
@@ -450,13 +450,13 @@ body {
 }
 .information-content__title::after {
   position: relative;
-  content: url(/img/information/01.svg);
+  content: url(/inginiring/img/information/01.svg);
   bottom: 10px;
   left: 60px;
 }
 .information-content__title::before {
   position: relative;
-  content: url(/img/information/02.svg);
+  content: url(/inginiring/img/information/02.svg);
   right: 60px;
   bottom: 10px;
 }
@@ -470,25 +470,25 @@ body {
 }
 
 .cards-box:first-child {
-  background-image: url(/img/information/01.jpg);
+  background-image: url(/inginiring/img/information/01.jpg);
   background-size: cover;
   border-radius: 10px;
 }
 
 .cards-box:last-child {
-  background-image: url(/img/information/02.jpg);
+  background-image: url(/inginiring/img/information/02.jpg);
   background-size: cover;
   border-radius: 10px;
 }
 
 .cards-box:nth-child(2) .projects:first-child {
-  background-image: url(/img/information/03.jpg);
+  background-image: url(/inginiring/img/information/03.jpg);
   background-size: cover;
   border-radius: 10px;
 }
 
 .cards-box:nth-child(2) .projects:last-child {
-  background-image: url(/img/information/04.jpg);
+  background-image: url(/inginiring/img/information/04.jpg);
   background-size: cover;
   border-radius: 10px;
 }
@@ -574,7 +574,7 @@ body {
   }
 }
 .background-block {
-  background-image: url(/img/feedback/portfolio.jpg);
+  background-image: url(/inginiring/img/feedback/portfolio.jpg);
   height: 407px;
   width: 100%;
 }

@@ -4,13 +4,13 @@
     color: $color-text;
     &::after {
         position: relative;
-        content: url(/img/information/01.svg);
+        content: url(/inginiring/img/information/01.svg);
         bottom: 10px;
         left: 60px;
     }
     &::before {
         position: relative;
-        content: url(/img/information/02.svg);
+        content: url(/inginiring/img/information/02.svg);
         right: 60px;
         bottom: 10px;
     }
@@ -25,23 +25,23 @@
 }
 
 .cards-box:first-child {
-    background-image: url(/img/information/01.jpg);
+    background-image: url(/inginiring/img/information/01.jpg);
     background-size: cover;
     border-radius: 10px;
 }
 .cards-box:last-child {
-    background-image: url(/img/information/02.jpg);
+    background-image: url(/inginiring/img/information/02.jpg);
     background-size: cover;
     border-radius: 10px;
 }
 
 .cards-box:nth-child(2) .projects:first-child {
-    background-image: url(/img/information/03.jpg);
+    background-image: url(/inginiring/img/information/03.jpg);
     background-size: cover;
     border-radius: 10px;
 }
 .cards-box:nth-child(2) .projects:last-child {
-    background-image: url(/img/information/04.jpg);
+    background-image: url(/inginiring/img/information/04.jpg);
     background-size: cover;
     border-radius: 10px;
 }
