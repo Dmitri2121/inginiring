@@ -1,53 +1,95 @@
-.footer-content {
-    display:flex;
-    justify-content: space-between;
+// .footer-content {
+//     display:flex;
+//     justify-content: space-between;
 
+// }
+
+// .map {
+//     border-radius: 10px;
+//     width: 500px;
+// }
+
+// .contact {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//     height: 100%;
+//     width: 40%;
+// }
+
+// .contact__item {
+//     width: 47%;
+//     padding: 7px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     background-color: $background-color-numbers;
+//     border-radius: 8px;
+//     &:nth-child(1) {
+//         margin-bottom: 20px;
+//     }
+//     &:nth-child(2) {
+//         margin-bottom: 20px;
+//     }
+// }
+
+// .contact__title {
+//     @include font ('Oswald', 35px, 22px, 500);
+//     color: $color-text;
+//     text-align: center;
+// }
+
+// .contact__subtitle {
+//     margin: 0;
+// }
+
+// .contact__text {
+//     @include font ('Oswald', 35px, 24px, 500);
+//     color: $color-text;
+//     text-align: center;
+
+// }
+
+.footer-content {
+    display: flex;
+    justify-content:space-evenly;
 }
 
-.map {
-    border-radius: 10px;
+.footer-content__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
     width: 500px;
 }
 
-.contact {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 40%;
+.footer-content__item {
+    width: 190px;
 }
 
-.contact__item {
-    width: 47%;
-    padding: 7px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $background-color-numbers;
-    border-radius: 8px;
-    &:nth-child(1) {
-        margin-bottom: 20px;
-    }
-    &:nth-child(2) {
-        margin-bottom: 20px;
-    }
-}
-
-.contact__title {
-    @include font ('Oswald', 35px, 22px, 500);
+.footer-content__title {
+    @include font ('Oswald', 17.58px, 26px, 400);
     color: $color-text;
-    text-align: center;
 }
 
-.contact__subtitle {
-    margin: 0;
+.footer-content__element {
+    padding-left: 0;
 }
 
-.contact__text {
-    @include font ('Oswald', 35px, 24px, 500);
+.footer-content__list {
+    @include font ('Oswald', 25px, 15px, 300);
     color: $color-text;
-    text-align: center;
+    list-style-type: none;
+    
+}
 
+.footer-content__link {
+    @include font ('Oswald', 25px, 20px, 300);
+    color: $color-text;
+    text-decoration: none;
+    &:hover {
+        opacity: 0.5;
+        border-bottom: 2px solid $background-color-numbers;
+    }
 }
 
 
