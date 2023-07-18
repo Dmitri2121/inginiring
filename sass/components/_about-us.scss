@@ -73,9 +73,134 @@
 
 //О Нас
 
-.header-content_bordered {
-    border-bottom: 2px solid $color-text;
+
+
+.blocks-element {
+    display: flex;
+    justify-content: space-between;
 }
+
+
+
+.blocks-element__img {
+    padding: 30px;
+    width: 600px;
+    float: left;
+    object-fit:contain; 
+}
+
+.blocks-element__img_posited {
+    float: right;
+}
+
+
+.blocks-element__text {
+    margin: 0;
+    @include font ('Oswald', 40px, 20px, 400);
+    color: $color-text;
+    text-align: justify;
+}
+
+.our-documents {
+    margin: 0 auto;
+    width: 50vw;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid $background-color-numbers;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.our-documents__text {
+    @include font ('Oswald', 27px, 17px, 700);
+    color: $color-text;
+    text-align: justify;
+}
+
+//Button
+
+
+
+
+
+
+
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  background: transparent;
+  padding: 0;
+  
+  &.learn-more__button {
+    width: 12rem;
+    height: auto;
+    .circle {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: $background-color;
+      border-radius: 1.625rem;
+      .circle__icon {
+        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: $color-text;
+        left: 0.625rem;
+        width: 1.125rem;
+        height: 0.125rem;
+          &::before {
+            position: absolute;
+            content: '';
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid $color-text;
+            border-right: 0.125rem solid $color-text;
+            transform: rotate(45deg);
+          
+        }
+      }
+    }
+    .learn-more__link {
+      @include font ('Oswald', 20px, 18px, 500);
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.9rem 0;
+      margin: 0 0 0 1.85rem;
+      color: $background-color;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      .circle__icon {
+        background: $color-text;
+        transform: translate(1rem, 0);
+      }
+    }
+    .learn-more__link {
+      color: $color-text;
+    }
+  }
+}
+
 
 
 

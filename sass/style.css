@@ -437,8 +437,124 @@ body {
   color: #162831;
 }
 
-.header-content_bordered {
-  border-bottom: 2px solid #FFFFFF;
+.blocks-element {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blocks-element__img {
+  padding: 30px;
+  width: 600px;
+  float: left;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.blocks-element__img_posited {
+  float: right;
+}
+
+.blocks-element__text {
+  margin: 0;
+  font-family: "Oswald";
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: justify;
+}
+
+.our-documents {
+  margin: 0 auto;
+  width: 50vw;
+  padding: 20px;
+  border-radius: 20px;
+  border: 5px solid #018ABE;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.our-documents__text {
+  font-family: "Oswald";
+  line-height: 27px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: justify;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  background: transparent;
+  padding: 0;
+}
+button.learn-more__button {
+  width: 12rem;
+  height: auto;
+}
+button.learn-more__button .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #162831;
+  border-radius: 1.625rem;
+}
+button.learn-more__button .circle .circle__icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #FFFFFF;
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+}
+button.learn-more__button .circle .circle__icon::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #FFFFFF;
+  border-right: 0.125rem solid #FFFFFF;
+  transform: rotate(45deg);
+}
+button.learn-more__button .learn-more__link {
+  font-family: "Oswald";
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.9rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #162831;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .circle__icon {
+  background: #FFFFFF;
+  transform: translate(1rem, 0);
+}
+button:hover .learn-more__link {
+  color: #FFFFFF;
 }
 
 .information-content__title {
@@ -593,12 +709,12 @@ body {
 }
 
 .footer-content__item {
-  width: 190px;
+  width: 240px;
 }
 
 .footer-content__title {
   font-family: "Oswald";
-  line-height: 17.58px;
+  line-height: 28px;
   font-size: 26px;
   font-weight: 400;
   color: #FFFFFF;
@@ -611,7 +727,7 @@ body {
 .footer-content__list {
   font-family: "Oswald";
   line-height: 25px;
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 300;
   color: #FFFFFF;
   list-style-type: none;
@@ -787,6 +903,8 @@ body {
 }
 
 .blocks-documents__images {
+  position: relative;
+  z-index: 2;
   width: 400px;
   transition: 0.6s;
   border: 5px solid #018ABE;
@@ -802,7 +920,7 @@ body {
   position: absolute;
   top: -45px;
   left: 45px;
-  z-index: -1;
+  z-index: 1;
   transition: 0.6s;
   border: 5px solid #018ABE;
   border-radius: 15px;
@@ -817,7 +935,7 @@ body {
   position: absolute;
   top: -90px;
   left: 90px;
-  z-index: -2;
+  z-index: 0;
   transition: 0.6s;
   border: 5px solid #018ABE;
   border-radius: 15px;
@@ -825,4 +943,93 @@ body {
 .blocks-documents__images:nth-child(3):hover {
   transform: scale(1.02);
   cursor: pointer;
+}
+
+.our-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-contacts__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 30vw;
+}
+
+.footer-content__img {
+  width: 600px;
+}
+
+.cards-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-bottom: 30px;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  background-color: #fff;
+  background-image: url("/inginiring/img/clients/бакалея (1).png");
+  background-size: 100%;
+  background-position: center;
+  box-shadow: 0px 0px 10px 2px rgba(197, 197, 197, 0.5);
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+.card:hover {
+  transform: translateY(-20px);
+  background-size: 105%;
+  box-shadow: 0px 0px 20px 0px rgba(119, 119, 119, 0.6);
+}
+.card:hover .card__button {
+  transform: translateY(0%);
+  color: #027090;
+  transition: all 0.3s;
+}
+.card:nth-child(2) {
+  background-image: url("/inginiring/img/clients/бремор.svg");
+}
+.card:nth-child(3) {
+  background-image: url("/inginiring/img/clients/брестский-рынок.png");
+}
+.card:nth-child(4) {
+  background-image: url("/inginiring/img/clients/гефест.svg");
+}
+.card:nth-child(5) {
+  background-image: url("/inginiring/img/clients/ивацевичи-древ.png");
+}
+.card:nth-child(6) {
+  background-image: url("/inginiring/img/clients//крок.png");
+}
+.card:nth-child(7) {
+  background-image: url("/inginiring/img/clients/мясик.svg");
+}
+.card:nth-child(8) {
+  background-image: url("/inginiring/img/clients/санта.png");
+}
+.card:nth-child(9) {
+  background-image: url("/inginiring/img/clients/укс.png");
+}
+
+.card__button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translateY(100%);
+  transition: all 0.3s;
 }/*# sourceMappingURL=style.css.map */
