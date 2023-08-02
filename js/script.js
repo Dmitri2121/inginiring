@@ -2,9 +2,9 @@
 let swiper = new Swiper(".swiper", {
   slidesPerView: 3,
   loop: true,
-  centerSlide: "true",
-  fade: "true",
-  grabCursor: "true",
+  centeredSlides: true,
+  fade: true,
+  grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -31,4 +31,3 @@ let swiper = new Swiper(".swiper", {
 swiper.on("click", function (e) {
   console.log("Click on slide", e.clickedIndex);
 });
-

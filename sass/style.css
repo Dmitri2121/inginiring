@@ -714,6 +714,16 @@ button:hover .learn-more__link {
     display: none;
   }
 }
+.swiper-slide {
+  transition: 0.3s;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+  transform: scale(0.8);
+  opacity: 0.5;
+  filter: blur(2px);
+}
+
 .footer-content {
   display: flex;
   justify-content: space-evenly;

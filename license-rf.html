@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="sass/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+          <div class="header-content header-content__wrapper">
+            <div class="logo">
+              <a href="index.html" class="logo__link"><img class="logo__image" src="img/header/logo.png" alt="logo"/></a>
+            </div>
+  
+            <div class="nav">
+              <ul class="nav__content">
+                <li class="nav__item">
+                  <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="about-us.html">О нас</a></li>
+                <li class="nav__item">
+                  <a class="nav__link" href="our-services.html">Наши услуги</a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="index.html#top">Отзывы</a></li>
+                <li class="nav__item">
+                  <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="our-license">
+        <div class="wrapper">
+            <div class="our-license-content">
+                <h2 class="information-content__title">НАШИ ЛИЦЕНЗИИ СРО</h2>
+                <div class="blocks-documents blocks-documents__content"> 
+                        <div class="blocks-documents__item">
+                            <img src="img/license-rf/01.jpg" alt="" class="blocks-documents__images" onclick="displayModal(this);">                  
+                        </div>
+                  
+                        <div class="blocks-documents__item">
+                          <img src="img/license-rf/02.jpg" alt="" class="blocks-documents__images" onclick="displayModal(this);">                  
+                        </div>
+                </div>
+
+                <!-- Модальное окно -->
+            <div id="modal" class="modal" onclick="hideModal();">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                  <img class="modal-content__img" id="modal-image">
+                </div>
+            </div>
+            </div>
+
+            
+            
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="wrapper">
+          <div class="information-content">
+            <h2 class="information-content__title">КОНТАКТЫ</h2>
+          </div>
+          <div class="footer-content">
+            <div class="footer-content__block">
+              <div class="footer-content__item">
+                <h3 class="footer-content__title">Наши телефоны:</h3>
+                <ul class="footer-content__element">
+                  <li class="footer-content__list"><a href="tel:+375445851785" class="footer-content__link">+375 44 585 17 85</a></li>
+                  <li class="footer-content__list"><a href="tel:+375 162 57 41 42" class="footer-content__link">+375 162 57 41 42</a></li>
+                  <li class="footer-content__list"><a href="tel:+375162574147" class="footer-content__link">+375 162 57 41 47</a></li>
+                </ul>         
+              </div>
+    
+              <div class="footer-content__item">
+                <h3 class="footer-content__title">Написать на почту:</h3>
+                <ul class="footer-content__element">
+                  <li class="footer-content__list"><a href="mailto:psgstroyinginiring@gmail.com" class="footer-content__link">psgstroyinginiring@gmail.com</a></li>
+                </ul>         
+              </div>
+    
+              <div class="footer-content__item">
+                <h3 class="footer-content__title">Наш адрес:</h3>
+                <ul class="footer-content__element">
+                  <li class="footer-content__list"><a href="https://yandex.by/maps/-/CLTEmsa" class="footer-content__link">Республика Беларусь, 224005, г.Брест, ул. Героев обороны Брестской крепости 7, офис 130</a></li>
+                </ul>         
+              </div>
+    
+              <div class="footer-content__item">
+                <h3 class="footer-content__title">Время работы:</h3>
+                <ul class="footer-content__element">
+                  <li class="footer-content__list">ПН - СБ 08:00 - 18:00</li>
+                </ul>         
+              </div>
+            </div>
+            
+            
+            
+            <div class="google-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.0876009594726!2d23.676184775981124!3d52.09633726751072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210b27255e9093%3A0xbed6ae5fde46e5d!2z0J_RgNC-0LXQutGC0L3Qvi3RgdGC0YDQvtC40YLQtdC70YzQvdCw0Y8g0LPRgNGD0L_Qv9CwINCh0YLRgNC-0LnQuNC90LbQuNC90LjRgNC40L3Qsw!5e0!3m2!1sru!2sby!4v1688120221695!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="js/modal.js"></script>
+</body>
+</html>
