@@ -4,13 +4,13 @@
     color: $color-text;
     &::after {
         position: relative;
-        content: url(/inginiring/img/information/01.svg);
+        content: url('../img/information/01.svg');
         bottom: 10px;
         left: 60px;
     }
     &::before {
         position: relative;
-        content: url(/inginiring/img/information/02.svg);
+        content: url('../img/information/02.svg');
         right: 60px;
         bottom: 10px;
     }
@@ -21,30 +21,9 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 540px;
 }
 
-.cards-box:first-child {
-    background-image: url(/inginiring/img/information/01.jpg);
-    background-size: cover;
-    border-radius: 10px;
-}
-.cards-box:last-child {
-    background-image: url(/inginiring/img/information/02.jpg);
-    background-size: cover;
-    border-radius: 10px;
-}
 
-.cards-box:nth-child(2) .projects:first-child {
-    background-image: url(/inginiring/img/information/03.jpg);
-    background-size: cover;
-    border-radius: 10px;
-}
-.cards-box:nth-child(2) .projects:last-child {
-    background-image: url(/inginiring/img/information/04.jpg);
-    background-size: cover;
-    border-radius: 10px;
-}
 
 .projects:hover {
     cursor: pointer;
@@ -74,6 +53,7 @@
 
 .projects__text {
     @include font('Oswald', 34px, 24px, 700);
+    letter-spacing: 1px;
     padding-left: 50px;
     padding-top: 15px;
     color: $color-text;
@@ -88,6 +68,17 @@
     flex-direction: column;
     justify-content: space-between;
     height: 540px;
+    border-radius: 10px;
+    &:nth-child(1) .projects:first-child {
+        background-image: url('../../img/information/02.jpg');
+        background-size: cover;
+    }
+
+    &:nth-child(2) {
+        background-image: url('../../img/information/01.jpg');
+        background-size: cover;
+        
+    }
 }
 
 

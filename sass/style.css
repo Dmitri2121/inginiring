@@ -346,6 +346,7 @@ body {
   font-weight: 400;
   text-decoration: none;
   color: #FFFFFF;
+  letter-spacing: 1px;
 }
 .nav__link:hover {
   color: #018ABE;
@@ -354,7 +355,7 @@ body {
 }
 
 .about-us-content {
-  background-image: url(/inginiring/img/about-us/background-about-us.jpg);
+  background-image: url("../img/about-us/background.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -369,14 +370,15 @@ body {
   line-height: 33.6px;
   font-size: 24px;
   font-weight: 700;
+  letter-spacing: 1px;
   color: #FFFFFF;
 }
 .about-us-content__title::before {
-  content: url(/inginiring/img/logo/02.svg);
+  content: url("../img/logo/02.svg");
   margin-right: 66px;
 }
 .about-us-content__title::after {
-  content: url(/inginiring/img/logo/03.svg);
+  content: url("../img/logo/03.svg");
   margin-left: 66px;
 }
 
@@ -385,6 +387,7 @@ body {
   line-height: 89.6px;
   font-size: 70px;
   font-weight: 700;
+  letter-spacing: 2px;
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 0;
@@ -432,6 +435,7 @@ body {
   line-height: 40px;
   font-size: 30px;
   font-weight: 500;
+  letter-spacing: 1px;
   margin: 0;
   text-align: center;
   color: #162831;
@@ -460,6 +464,7 @@ body {
   line-height: 40px;
   font-size: 20px;
   font-weight: 400;
+  letter-spacing: 0.7px;
   color: #FFFFFF;
   text-align: justify;
 }
@@ -478,6 +483,7 @@ body {
   line-height: 27px;
   font-size: 17px;
   font-weight: 700;
+  letter-spacing: 0.8px;
   color: #FFFFFF;
   text-align: justify;
 }
@@ -567,13 +573,13 @@ button:hover .learn-more__link {
 }
 .information-content__title::after {
   position: relative;
-  content: url(/inginiring/img/information/01.svg);
+  content: url("../img/information/01.svg");
   bottom: 10px;
   left: 60px;
 }
 .information-content__title::before {
   position: relative;
-  content: url(/inginiring/img/information/02.svg);
+  content: url("../img/information/02.svg");
   right: 60px;
   bottom: 10px;
 }
@@ -583,31 +589,6 @@ button:hover .learn-more__link {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 540px;
-}
-
-.cards-box:first-child {
-  background-image: url(/inginiring/img/information/01.jpg);
-  background-size: cover;
-  border-radius: 10px;
-}
-
-.cards-box:last-child {
-  background-image: url(/inginiring/img/information/02.jpg);
-  background-size: cover;
-  border-radius: 10px;
-}
-
-.cards-box:nth-child(2) .projects:first-child {
-  background-image: url(/inginiring/img/information/03.jpg);
-  background-size: cover;
-  border-radius: 10px;
-}
-
-.cards-box:nth-child(2) .projects:last-child {
-  background-image: url(/inginiring/img/information/04.jpg);
-  background-size: cover;
-  border-radius: 10px;
 }
 
 .projects:hover {
@@ -641,6 +622,7 @@ button:hover .learn-more__link {
   line-height: 34px;
   font-size: 24px;
   font-weight: 700;
+  letter-spacing: 1px;
   padding-left: 50px;
   padding-top: 15px;
   color: #FFFFFF;
@@ -655,6 +637,15 @@ button:hover .learn-more__link {
   flex-direction: column;
   justify-content: space-between;
   height: 540px;
+  border-radius: 10px;
+}
+.cards-box:nth-child(1) .projects:first-child {
+  background-image: url("../../img/information/02.jpg");
+  background-size: cover;
+}
+.cards-box:nth-child(2) {
+  background-image: url("../../img/information/01.jpg");
+  background-size: cover;
 }
 
 .swiper-navBtn {
@@ -691,11 +682,21 @@ button:hover .learn-more__link {
   }
 }
 .background-block {
-  background-image: url(/inginiring/img/feedback/portfolio.jpg);
-  height: 407px;
-  width: 100%;
+  background-image: url("/img/feedback/6.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 360px 0;
+}
+.background-block__content {
+  width: 1440px;
+  margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  .swiper-navBtn {
+    display: none;
+  }
+}
 .footer-content {
   display: flex;
   justify-content: space-evenly;
@@ -709,7 +710,7 @@ button:hover .learn-more__link {
 }
 
 .footer-content__item {
-  width: 240px;
+  width: 250px;
 }
 
 .footer-content__title {
@@ -718,6 +719,7 @@ button:hover .learn-more__link {
   font-size: 26px;
   font-weight: 400;
   color: #FFFFFF;
+  letter-spacing: 1px;
 }
 
 .footer-content__element {
@@ -729,20 +731,23 @@ button:hover .learn-more__link {
   line-height: 25px;
   font-size: 19px;
   font-weight: 300;
+  letter-spacing: 1px;
   color: #FFFFFF;
   list-style-type: none;
 }
 
 .footer-content__link {
   font-family: "Oswald";
-  line-height: 25px;
+  line-height: 28px;
   font-size: 20px;
   font-weight: 300;
   color: #FFFFFF;
   text-decoration: none;
+  letter-spacing: 1px;
 }
 .footer-content__link:hover {
-  opacity: 0.5;
+  color: #018ABE;
+  transition: color 0.3s;
   border-bottom: 2px solid #018ABE;
 }
 
@@ -801,6 +806,7 @@ button:hover .learn-more__link {
   line-height: 76px;
   font-size: 56px;
   font-weight: 600;
+  letter-spacing: 2px;
   margin-top: 0;
   color: #FFFFFF;
   width: 47vw;
@@ -961,75 +967,20 @@ button:hover .learn-more__link {
   width: 600px;
 }
 
-.cards-content {
+.icon-item {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
 }
 
-.card {
-  margin-bottom: 30px;
-  position: relative;
-  width: 400px;
-  height: 400px;
-  overflow: hidden;
-  background-color: #fff;
-  background-image: url("/inginiring/img/clients/бакалея (1).png");
-  background-size: 100%;
-  background-position: center;
-  box-shadow: 0px 0px 10px 2px rgba(197, 197, 197, 0.5);
-  box-sizing: border-box;
-  transition: all 0.3s;
+.icon-item__img {
+  width: 200px;
+  height: 190px;
+  transition: 0.6s;
+  filter: grayscale(100%);
 }
-.card:hover {
-  transform: translateY(-20px);
-  background-size: 105%;
-  box-shadow: 0px 0px 20px 0px rgba(119, 119, 119, 0.6);
-}
-.card:hover .card__button {
-  transform: translateY(0%);
-  color: #027090;
-  transition: all 0.3s;
-}
-.card:nth-child(2) {
-  background-image: url("/inginiring/img/clients/бремор.svg");
-}
-.card:nth-child(3) {
-  background-image: url("/inginiring/img/clients/брестский-рынок.png");
-}
-.card:nth-child(4) {
-  background-image: url("/inginiring/img/clients/гефест.svg");
-}
-.card:nth-child(5) {
-  background-image: url("/inginiring/img/clients/ивацевичи-древ.png");
-}
-.card:nth-child(6) {
-  background-image: url("/inginiring/img/clients//крок.png");
-}
-.card:nth-child(7) {
-  background-image: url("/inginiring/img/clients/мясик.svg");
-}
-.card:nth-child(8) {
-  background-image: url("/inginiring/img/clients/санта.png");
-}
-.card:nth-child(9) {
-  background-image: url("/inginiring/img/clients/укс.png");
-}
-
-.card__button {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  background-color: #fff;
-  box-sizing: border-box;
-  padding: 20px 10px;
-  font-size: 20px;
-  color: #fff;
-  font-weight: 300;
-  text-align: center;
-  text-transform: uppercase;
-  transform: translateY(100%);
-  transition: all 0.3s;
+.icon-item__img:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
 }/*# sourceMappingURL=style.css.map */

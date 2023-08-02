@@ -1,86 +1,17 @@
-.cards-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.icon-item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 30px;
 }
 
-.card {
-    margin-bottom: 30px;
-	position: relative;
-	width: 400px;
-	height: 400px;
-	overflow: hidden;
-	background-color: #fff;
-	background-image: url('/inginiring/img/clients/бакалея\ \(1\).png');
-	background-size:100%;
-	background-position: center;
-	box-shadow: 0px 0px 10px 2px rgba(#c5c5c5, 0.5);
-	box-sizing: border-box;
-
-	transition: all 0.3s;
-
+.icon-item__img {
+	width: 200px;
+	height: 190px;
+	transition: .6s;
+	filter: grayscale(100%); 
 	&:hover {
-		transform: translateY(-20px);
-		background-size: 105%;
-		box-shadow: 0px 0px 20px 0px rgba(#777777, 0.6);
-
-		.card__button {
-			transform: translateY(0%);
-			color: #027090;
-
-			transition: all 0.3s;
-		}
+		cursor: pointer;
+		filter: grayscale(0%); 
 	}
-    &:nth-child(2) {
-        background-image: url('/inginiring/img/clients/бремор.svg');
-
-    }
-    &:nth-child(3) {
-        background-image: url('/inginiring/img/clients/брестский-рынок.png');
-
-    }
-    &:nth-child(4) {
-        background-image: url('/inginiring/img/clients/гефест.svg');
-
-    }
-    &:nth-child(5) {
-        background-image: url('/inginiring/img/clients/ивацевичи-древ.png');
-
-    }
-    &:nth-child(6) {
-        background-image: url('/inginiring/img/clients//крок.png');
-
-    }
-    &:nth-child(7) {
-        background-image: url('/inginiring/img/clients/мясик.svg');
-
-    }
-    &:nth-child(8) {
-        background-image: url('/inginiring/img/clients/санта.png');
-
-    }
-    &:nth-child(9) {
-        background-image: url('/inginiring/img/clients/укс.png');
-
-    }
-}
-
-.card__button {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	display: block;
-	width: 100%;
-	background-color: #fff;
-	box-sizing: border-box;
-	padding: 20px 10px;
-	font-size: 20px;
-	color: #fff;
-	font-weight: 300;
-	text-align: center;
-	text-transform: uppercase;
-
-	transform: translateY(100%);
-
-	transition: all 0.3s;
 }

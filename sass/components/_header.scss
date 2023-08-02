@@ -39,6 +39,7 @@ body {
     @include font ('Oswald', 19px, 32px, 400);
     text-decoration: none;
     color: $color-text;
+    letter-spacing: 1px;
     &:hover {
         color: #018ABE;
         transition: color .3s;

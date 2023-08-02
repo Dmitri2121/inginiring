@@ -37,18 +37,29 @@
   }
 
   .background-block {
-    background-image: url(/inginiring/img/feedback/portfolio.jpg);
-    height: 407px;
-    width: 100%;
+    // background-image: url('../img/feedback/portfolio.jpg');
+    background-image: url('/img/feedback/6.jpg');
+    // background-image: url('/img/feedback/1.jpg');
+    // background-image: url('/img/feedback/2.jpg');
+    // background-image: url('/img/feedback/3.jpg');
+    // background-image: url('/img/feedback/4.jpg');
+    // background-image: url('/img/feedback/5.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 360px 0;
+    &__content {
+      width: 1440px;
+      margin: 0 auto;
+    }
   }
   
   
   
-//   @media screen and (max-width: 768px) {
-//     .swiper-navBtn {
-//       display: none;
-//     }
-//   }
+  @media screen and (max-width: 768px) {
+    .swiper-navBtn {
+      display: none;
+    }
+  }
 
 
 

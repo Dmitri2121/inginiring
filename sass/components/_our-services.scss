@@ -27,6 +27,7 @@
 
 .blocks__title {
     @include font ('Oswald', 76px, 56px, 600);
+    letter-spacing: 2px;
     margin-top: 0;
     color: $color-text;
     width: 47vw;
