@@ -70,8 +70,25 @@
     height: 540px;
     border-radius: 10px;
     &:nth-child(1) .projects:first-child {
-        background-image: url('../../img/information/02.jpg');
-        background-size: cover;
+        background-image: url('../../img/information/03.jpg');
+        background-size:cover;
+        border-radius: 10px;
+    }
+    &:nth-child(1) .projects:last-child {
+        background-image: url('../../img/information/04.jpg');
+        background-size:cover;
+        border-radius: 10px;
+    }
+    &:nth-child(3) .projects:first-child {
+        background-image: url('../../img/information/02new.jpg');
+        background-size:cover;
+        border-radius: 10px;
+    }
+    &:nth-child(3) .projects:last-child {
+        background-image: url('../../img/information/04.jpg');
+        background-size:cover;
+        border-radius: 10px;
+        background-position: bottom;
     }
 
     &:nth-child(2) {
