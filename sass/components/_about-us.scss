@@ -114,6 +114,10 @@
     background: rgba(255, 255, 255, 0.3);
 }
 
+.our-documents__block {
+  margin-top: 30px;
+}
+
 .our-documents__text {
     @include font ('Oswald', 27px, 17px, 700);
     letter-spacing: 0.8px;
@@ -122,13 +126,6 @@
 }
 
 //Button
-
-
-
-
-
-
-
 
 button {
   position: relative;
@@ -206,6 +203,97 @@ button {
   }
 }
 
+//Адаптив 1200px
+
+@media (max-width: 1200px) {
+  .numbers {
+    width: 80%;
+    height: 100%;
+  }
+
+  .numbers__title {
+    font-size: 5vw;
+  }
+
+  .numbers__subtitle {
+    font-size: 2vw;
+    line-height: 3.5vh;
+  }
+  .about-us-content__subtitle {
+    font-size: 60px;
+  }
+
+  .about-us-content__text {
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-content__subtitle {
+    font-size: 52px;
+    margin-top: 5px;
+  }
+
+  .about-us-content__text {
+    font-size: 26px;
+  }
+
+  .numbers__title {
+    height: 80px;
+  }
+
+  .numbers__subtitle {
+    line-height: 22px;
+  }
+
+  
+}
+
+
+@media (max-width: 480px) {
+
+  .about-us-content {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .about-us-content__title {
+      font-size: 16px;
+  }
+
+  .about-us-content__title::before {
+      margin-right: 40px;
+  }
+
+  .about-us-content__title::after {
+      margin-left: 40px;
+  }
+
+  .about-us-content__subtitle {
+      font-size: 40px;
+      margin-top: 0;
+  }
+
+  .about-us-content__text {
+      font-size: 20px;
+      margin: 0;
+  }
+
+  .numbers__item {
+      height: 80px;
+  }
+
+  .numbers__title {
+      line-height: 40px;
+      height: 30px;
+  }
+
+  .numbers__subtitle {
+      padding-top: 5px;
+     font-size: 10px;
+     line-height: 15px;
+  }
+
+}
 
 
 

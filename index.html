@@ -19,37 +19,53 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
 
   <!-- Favicon -->
-  <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
-  <title>ООО "ПСГ Стройинжиниринг"</title>
+  <link rel="icon" href="img/favicon/favicon2.ico" type="image/x-icon">
+  <title>СТРОЙИНЖИНИРИНГ</title>
 </head>
 
 <body>
+
   <header class="header">
     <div class="wrapper">
       <div class="header-content header-content__wrapper">
         <div class="logo">
           <a href="index.html" class="logo__link"><img class="logo__image" src="img/header/logo.png" alt="logo" /></a>
-
         </div>
 
         <nav class="nav">
           <ul class="nav__content">
-            <li class="nav__item">
-              <a class="nav__link" href="index.html">Главная</a>
-            </li>
+            <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
             <li class="nav__item"><a class="nav__link" href="about-us.html">О нас</a></li>
-            <li class="nav__item">
-              <a class="nav__link" href="our-services.html">Наши услуги</a>
-            </li>
+            <li class="nav__item"><a class="nav__link" href="our-services.html">Наши услуги</a></li>
             <li class="nav__item"><a class="nav__link" href="index.html#top">Отзывы</a></li>
-            <li class="nav__item">
-              <a class="nav__link" href="contacts.html">Контакты</a>
-            </li>
+            <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
+
+        <section class="top-nav">
+    
+          <input id="menu-toggle" type="checkbox" />
+          <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+        </label>
+          <ul class="menu">
+            <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+            <li class="nav__item"><a class="nav__link" href="about-us.html">О нас</a></li>
+            <li class="nav__item"><a class="nav__link" href="our-services.html">Наши услуги</a></li>
+            <li class="nav__item"><a class="nav__link" href="index.html#top">Отзывы</a></li>
+            <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </section>
+      
+       
+
+        
+        
+
       </div>
     </div>
   </header>
+
   <main class="main">
     <section class="about-us">
       <div class="wrapper">
@@ -65,7 +81,7 @@
             </div>
 
             <div class="numbers__item">
-              <h2 class="numbers__title">1900</h2>
+              <h2 class="numbers__title">450</h2>
               <h3 class="numbers__subtitle">ПРОЕКТОВ</h3>
             </div>
 
@@ -75,7 +91,7 @@
             </div>
 
             <div class="numbers__item">
-              <h2 class="numbers__title">500</h2>
+              <h2 class="numbers__title">>300</h2>
               <h3 class="numbers__subtitle">ЗАКАЗЧИКОВ</h3>
             </div>
           </div>
@@ -90,48 +106,27 @@
         </div>
 
         <div class="cards">
-          <div class="cards-box">
-            <div class="projects">
-              <a class="projects__item" href="our-license.html"><span class="projects__text">ЛИЦЕНЗИИ И
-                  АТТЕСТАТЫ</span></a>
-            </div>
-
-            <div class="projects">
-              <a class="projects__item" href="our-rewards.html"><span class="projects__text">НАШИ НАГРАДЫ</span></a>
-            </div>
+          <div class="cards__box">
+            <a href="our-license.html" class="cards-box__link"><span class="cards-box__text">ЛИЦЕНЗИИ И АТТЕСТАТЫ</span></a>
+            <a href="license-rf.html" class="cards-box__link"><span class="cards-box__text">СРО</span></a>
           </div>
 
-          <div class="cards-box">
-            <div class="projects">
-              <a class="projects__link" href="our-projects.html"><span class="projects__text">ПРОЕКТЫ</span></a>
-            </div>
+          <div class="cards__box">
+            <a href="clients.html" class="cards-box__link"><span class="cards-box__text">ПАРТНЕРЫ</span></a>
+            <a href="our-rewards.html" class="cards-box__link"><span class="cards-box__text">НАШИ НАГРАДЫ</span></a>
           </div>
-
-          <div class="cards-box">
-            <div class="projects">
-              <a class="projects__item" href="clients.html"><span class="projects__text">ПАРТНЕРЫ</span></a>
-            </div>
-
-            <div class="projects">
-              <a class="projects__item" href="license-rf.html"><span class="projects__text">ЛИЦЕНЗИИ СРО</span></a>
-            </div>
+       
+          <div class="cards__box">
+            <a href="our-projects.html" class="cards-box__link"><span class="cards-box__text">ПРОЕКТЫ</span></a>
           </div>
-
-          <!-- <div class="cards-box">
-              <div class="projects">
-                <a class="projects__link" href="clients.html"><span class="projects__text">ПАРТНЕРЫ</span></a>
-              </div>
-              <div class="projects">
-                <a class="projects__link" href="clients.html"><span class="projects__text">ЛИЦЕНЗИИ СРО</span></a>
-              </div>
-            </div> -->
-
-
-
-
-
-
+          
         </div>
+
+          
+
+         
+          
+
       </div>
     </section>
 
@@ -145,52 +140,70 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="image-content">
-                <img class="swiper__image" src="img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                <img class="swiper__image" src="img/feedback/01.jpg"
                   alt="" onclick="displayModal(this);" />
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="image-content">
-                <img class="swiper__image" src="img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                <img class="swiper__image" src="img/feedback/02.jpg"
                   alt="" onclick="displayModal(this);" />
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="image-content">
-                <img class="swiper__image" src="img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                <img class="swiper__image" src="img/feedback/03.jpg"
                   alt="" onclick="displayModal(this);" />
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="image-content">
-                <img class="swiper__image" src="img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                <img class="swiper__image" src="img/feedback/04.jpg"
                   alt="" onclick="displayModal(this);" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="image-content">
-                <img class="swiper__image" src="img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                <img class="swiper__image" src="img/feedback/05.jpg"
                   alt="" onclick="displayModal(this);" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="image-content">
-                <img class="swiper__image" src="img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                <img class="swiper__image" src="img/feedback/06.jpg"
                   alt="" onclick="displayModal(this);" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="image-content">
-                <img class="swiper__image" src="img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                <img class="swiper__image" src="img/feedback/07.jpg"
                   alt="" onclick="displayModal(this);" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="image-content">
-                <img class="swiper__image" src="img/feedback/52.21 и 53.21 вх Войсковая часть №677 отзыв_page-0001.jpg"
+                <img class="swiper__image" src="img/feedback/08.jpg"
+                  alt="" onclick="displayModal(this);" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-content">
+                <img class="swiper__image" src="img/feedback/09.jpg"
+                  alt="" onclick="displayModal(this);" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-content">
+                <img class="swiper__image" src="img/feedback/10.jpg"
+                  alt="" onclick="displayModal(this);" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-content">
+                <img class="swiper__image" src="img/feedback/11.jpg"
                   alt="" onclick="displayModal(this);" />
               </div>
             </div>
@@ -244,12 +257,10 @@
           <div class="footer-content__item">
             <h3 class="footer-content__title">Наши телефоны:</h3>
             <ul class="footer-content__element">
-              <li class="footer-content__list"><a href="tel:+375445851785" class="footer-content__link">+375 44 585 17
-                  85</a></li>
               <li class="footer-content__list"><a href="tel:+375 162 57 41 42" class="footer-content__link">+375 162 57
                   41 42</a></li>
               <li class="footer-content__list"><a href="tel:+375162574147" class="footer-content__link">+375 162 57 41
-                  47</a></li>
+                  47 (факс)</a></li>
             </ul>
           </div>
 
@@ -262,9 +273,9 @@
 
 
         <div class="google-map">
-          <iframe
+          <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.0876009594726!2d23.676184775981124!3d52.09633726751072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210b27255e9093%3A0xbed6ae5fde46e5d!2z0J_RgNC-0LXQutGC0L3Qvi3RgdGC0YDQvtC40YLQtdC70YzQvdCw0Y8g0LPRgNGD0L_Qv9CwINCh0YLRgNC-0LnQuNC90LbQuNC90LjRgNC40L3Qsw!5e0!3m2!1sru!2sby!4v1688120221695!5m2!1sru!2sby"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+             style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>

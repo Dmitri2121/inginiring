@@ -7,7 +7,6 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  scroll-behavior: smooth;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -338,6 +337,9 @@ body {
   list-style-type: none;
   margin-right: 90px;
 }
+.nav__item:last-child {
+  margin-right: 0;
+}
 
 .nav__link {
   font-family: "Oswald";
@@ -354,6 +356,137 @@ body {
   border-bottom: 2px solid #018ABE;
 }
 
+@media (max-width: 1200px) {
+  .logo {
+    margin-left: 20px;
+  }
+  .nav__link {
+    font-size: 28px;
+  }
+  .nav__item {
+    margin-right: 70px;
+  }
+}
+@media (max-width: 1003px) {
+  .nav__link {
+    font-size: 3vw;
+  }
+  .nav__item {
+    margin-right: 4vw;
+  }
+}
+@media (min-width: 769px) {
+  .top-nav {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-content__wrapper {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .logo__image {
+    width: 139px;
+    height: 111px;
+  }
+  .nav {
+    display: none;
+  }
+  .top-nav {
+    padding-right: 80px;
+  }
+  .menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    z-index: 50;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin-top: 175px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu > li {
+    overflow: hidden;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 3.5px;
+    width: 46px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  .menu-button::before {
+    content: "";
+    margin-top: -12px;
+  }
+  .menu-button::after {
+    content: "";
+    margin-top: 12px;
+  }
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  .menu-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+}
+@media (max-width: 480px) {
+  .logo__image {
+    width: 100px;
+    height: 70px;
+  }
+  .header-content__wrapper {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
 .about-us-content {
   background-image: url("../img/about-us/background.jpg");
   background-size: cover;
@@ -478,6 +611,10 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
+.our-documents__block {
+  margin-top: 30px;
+}
+
 .our-documents__text {
   font-family: "Oswald";
   line-height: 27px;
@@ -563,6 +700,75 @@ button:hover .learn-more__link {
   color: #FFFFFF;
 }
 
+@media (max-width: 1200px) {
+  .numbers {
+    width: 80%;
+    height: 100%;
+  }
+  .numbers__title {
+    font-size: 5vw;
+  }
+  .numbers__subtitle {
+    font-size: 2vw;
+    line-height: 3.5vh;
+  }
+  .about-us-content__subtitle {
+    font-size: 60px;
+  }
+  .about-us-content__text {
+    font-size: 29px;
+  }
+}
+@media (max-width: 768px) {
+  .about-us-content__subtitle {
+    font-size: 52px;
+    margin-top: 5px;
+  }
+  .about-us-content__text {
+    font-size: 26px;
+  }
+  .numbers__title {
+    height: 80px;
+  }
+  .numbers__subtitle {
+    line-height: 22px;
+  }
+}
+@media (max-width: 480px) {
+  .about-us-content {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .about-us-content__title {
+    font-size: 16px;
+  }
+  .about-us-content__title::before {
+    margin-right: 40px;
+  }
+  .about-us-content__title::after {
+    margin-left: 40px;
+  }
+  .about-us-content__subtitle {
+    font-size: 40px;
+    margin-top: 0;
+  }
+  .about-us-content__text {
+    font-size: 20px;
+    margin: 0;
+  }
+  .numbers__item {
+    height: 80px;
+  }
+  .numbers__title {
+    line-height: 40px;
+    height: 30px;
+  }
+  .numbers__subtitle {
+    padding-top: 5px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
 .information-content__title {
   font-family: "Oswald";
   line-height: 59px;
@@ -586,85 +792,133 @@ button:hover .learn-more__link {
 
 .cards {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
-.projects:hover {
-  cursor: pointer;
-  outline: 5px solid #018ABE;
+.cards__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 574px;
+  width: 418px;
+}
+.cards__box:nth-child(3) .cards-box__link {
+  margin-top: 150px;
+  height: 275px;
+}
+.cards__box:nth-child(1) .cards-box__link:first-child {
+  background-image: url("../../img/information/05.jpg");
+}
+.cards__box:nth-child(1) .cards-box__link:last-child {
+  background-image: url("../../img/information/08.jpg");
+}
+.cards__box:nth-child(2) .cards-box__link:first-child {
+  background-image: url("../../img/information/02new.jpg");
+}
+.cards__box:nth-child(2) .cards-box__link:last-child {
+  background-image: url("../../img/information/07.jpg");
+}
+
+.cards-box__link {
+  display: flex;
+  align-items: end;
+  background-image: url("/img/information/01.jpg");
+  background-size: cover;
+  height: 275px;
+  text-decoration: none;
   border-radius: 10px;
+}
+.cards-box__link:hover {
+  outline: 5px solid #018ABE;
   filter: blur(1px);
   transition: color 0.5s;
 }
 
-.projects__link {
-  display: flex;
-  align-items: flex-end;
-  width: 416px;
-  height: 540px;
-  text-decoration: none;
-  border-radius: 10px;
-}
-
-.projects__item {
-  display: flex;
-  align-items: flex-end;
-  width: 416px;
-  height: 250px;
-  text-decoration: none;
-  border-radius: 10px;
-}
-
-.projects__text {
+.cards-box__text {
   font-family: "Oswald";
   line-height: 34px;
   font-size: 24px;
   font-weight: 700;
-  letter-spacing: 1px;
-  padding-left: 50px;
-  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
   color: #FFFFFF;
   background-color: rgba(39, 47, 51, 0.7);
-  width: 100%;
-  height: 80px;
-  border-radius: 10px;
 }
 
-.cards-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 540px;
-  border-radius: 10px;
+@media (max-width: 1253px) {
+  .cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  .cards__box:nth-child(3) {
+    margin-top: 25px;
+    order: 3;
+    height: 275px;
+  }
+  .cards__box:nth-child(3) .cards-box__link {
+    margin-top: 0;
+  }
 }
-.cards-box:nth-child(1) .projects:first-child {
-  background-image: url("../../img/information/03.jpg");
-  background-size: cover;
-  border-radius: 10px;
+@media (max-width: 1200px) {
+  .information-content__title {
+    font-size: 38px;
+  }
 }
-.cards-box:nth-child(1) .projects:last-child {
-  background-image: url("../../img/information/04.jpg");
-  background-size: cover;
-  border-radius: 10px;
+@media (max-width: 865px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-.cards-box:nth-child(3) .projects:first-child {
-  background-image: url("../../img/information/02new.jpg");
-  background-size: cover;
-  border-radius: 10px;
+@media (max-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+  }
+  .cards__box {
+    gap: 20px;
+    height: 384px;
+    width: 310px;
+  }
+  .numbers__item {
+    padding-top: 0;
+  }
+  .numbers__subtitle {
+    font-weight: 500;
+  }
+  .information-content__title {
+    font-size: 30px;
+  }
+  .cards-box__text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
-.cards-box:nth-child(3) .projects:last-child {
-  background-image: url("../../img/information/04.jpg");
-  background-size: cover;
-  border-radius: 10px;
-  background-position: bottom;
+@media (max-width: 480px) {
+  .information-content__title {
+    font-size: 26px;
+  }
+  .information-content__title::before {
+    right: 20px;
+  }
+  .information-content__title::after {
+    left: 20px;
+  }
+  .cards-box__text {
+    font-size: 18px;
+    padding-left: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
 }
-.cards-box:nth-child(2) {
-  background-image: url("../../img/information/01.jpg");
-  background-size: cover;
-}
-
 .swiper-navBtn {
   color: #6E93f7;
   transition: color 0.3s ease;
@@ -699,21 +953,17 @@ button:hover .learn-more__link {
   }
 }
 .background-block {
-  background-image: url("/img/feedback/6.jpg");
+  background-image: url("../../img/проекты/02.jpg");
   background-size: cover;
   background-position: center center;
   padding: 360px 0;
+  margin-top: 50px;
 }
 .background-block__content {
   width: 1440px;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
-  .swiper-navBtn {
-    display: none;
-  }
-}
 .swiper-slide {
   transition: 0.3s;
 }
@@ -724,6 +974,27 @@ button:hover .learn-more__link {
   filter: blur(2px);
 }
 
+@media (max-width: 1150px) {
+  .background-block {
+    padding: 274px 0;
+  }
+}
+@media (max-width: 768px) {
+  .swiper-navBtn {
+    display: none;
+  }
+  .background-block {
+    padding: 210px 0;
+  }
+}
+@media (max-width: 480px) {
+  .image-content {
+    width: 80%;
+  }
+  .background-block {
+    padding: 140px 0;
+  }
+}
 .footer-content {
   display: flex;
   justify-content: space-evenly;
@@ -756,7 +1027,7 @@ button:hover .learn-more__link {
 .footer-content__list {
   font-family: "Oswald";
   line-height: 25px;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 300;
   letter-spacing: 1px;
   color: #FFFFFF;
@@ -780,20 +1051,34 @@ button:hover .learn-more__link {
 
 .google-map {
   overflow: hidden;
-  padding-bottom: 36%;
+  padding-bottom: 450px;
   position: relative;
   height: 0;
-  z-index: 2;
 }
 
-.google-map__content {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+.google-map iframe {
+  width: 600px;
+  height: 450px;
 }
 
+@media (max-width: 760px) {
+  .google-map iframe {
+    width: 450px;
+    height: 300px;
+  }
+  .google-map {
+    padding-bottom: 300px;
+  }
+  .footer-content__title {
+    font-size: 23px;
+  }
+  .footer-content__link {
+    font-size: 16px;
+  }
+  .footer-content__list {
+    font-size: 16px;
+  }
+}
 .block {
   display: flex;
   justify-content: space-between;
@@ -813,12 +1098,13 @@ button:hover .learn-more__link {
   justify-content: center;
   position: relative;
   margin-left: 50px;
+  padding-top: 110px;
 }
 
 .blocks__number {
   position: absolute;
   top: 2px;
-  left: -61px;
+  left: -18px;
   font-family: "Oswald";
   line-height: 240px;
   font-size: 215px;
@@ -854,6 +1140,25 @@ button:hover .learn-more__link {
   height: 640px;
 }
 
+@media (max-width: 1200px) {
+  .blocks__number {
+    font-size: 180px;
+  }
+  .blocks__title {
+    font-size: 47px;
+  }
+  .blocks__text {
+    font-size: 16px;
+  }
+  .block {
+    display: flex;
+    justify-content: center;
+  }
+  .blocks__image {
+    width: 440px;
+    height: 600px;
+  }
+}
 .our-projects-content {
   display: flex;
   justify-content: space-between;
@@ -994,6 +1299,26 @@ button:hover .learn-more__link {
   width: 600px;
 }
 
+@media (max-width: 1200px) {
+  .footer-content__img {
+    width: 55%;
+    height: 100%;
+  }
+  .our-content {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 1100px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content__block {
+    order: 2;
+  }
+}
 .icon-item {
   display: flex;
   flex-wrap: wrap;

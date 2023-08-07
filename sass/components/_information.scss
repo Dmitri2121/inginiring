@@ -18,87 +18,154 @@
 
 .cards {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-
-
-.projects:hover {
-    cursor: pointer;
-    outline: 5px solid $background-color-numbers;
-    border-radius: 10px;
-    filter: blur(1px);
-    transition: color .5s;
-}
-
-.projects__link {
-    display: flex;
-    align-items: flex-end;
-    width: 416px;
-    height: 540px;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-.projects__item {
-    display: flex;
-    align-items: flex-end;
-    width: 416px;
-    height: 250px;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-.projects__text {
-    @include font('Oswald', 34px, 24px, 700);
-    letter-spacing: 1px;
-    padding-left: 50px;
-    padding-top: 15px;
-    color: $color-text;
-    background-color: rgba(39,47,51, 0.7);    
     width: 100%;
-    height: 80px;
-    border-radius: 10px;
 }
 
-.cards-box {
+.cards__box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 540px;
-    border-radius: 10px;
-    &:nth-child(1) .projects:first-child {
-        background-image: url('../../img/information/03.jpg');
-        background-size:cover;
-        border-radius: 10px;
+    height: 574px;
+    width: 418px;
+    
+    &:nth-child(3) .cards-box__link {
+        margin-top: 150px;
+        height: 275px;
     }
-    &:nth-child(1) .projects:last-child {
-        background-image: url('../../img/information/04.jpg');
-        background-size:cover;
-        border-radius: 10px;
+    &:nth-child(1) .cards-box__link:first-child {
+        background-image: url("../../img/information/05.jpg");
     }
-    &:nth-child(3) .projects:first-child {
-        background-image: url('../../img/information/02new.jpg');
-        background-size:cover;
-        border-radius: 10px;
+    &:nth-child(1) .cards-box__link:last-child {
+        background-image: url("../../img/information/08.jpg");
     }
-    &:nth-child(3) .projects:last-child {
-        background-image: url('../../img/information/04.jpg');
-        background-size:cover;
-        border-radius: 10px;
-        background-position: bottom;
+    &:nth-child(2) .cards-box__link:first-child {
+        background-image: url("../../img/information/02new.jpg");
     }
-
-    &:nth-child(2) {
-        background-image: url('../../img/information/01.jpg');
-        background-size: cover;
-        
+    &:nth-child(2) .cards-box__link:last-child {
+        background-image: url("../../img/information/07.jpg");
     }
 }
 
+.cards-box__link {
+    display: flex;
+    align-items: end;
+    background-image: url("/img/information/01.jpg");
+    background-size: cover;
+    height: 275px;
+    text-decoration: none;
+    border-radius: 10px;
+    &:hover {
+        outline: 5px solid #018ABE;
+        filter: blur(1px);
+        transition: color .5s;
+        }
+  }
 
+
+  .cards-box__text {
+    @include font('Oswald', 34px, 24px, 700);
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    color: #FFFFFF;
+    background-color: rgba(39, 47, 51, 0.7);
+  }
+
+
+
+    
+  @media (max-width: 1253px) {
+    .cards {
+        display: flex;
+        justify-content:space-around;
+    }
+    .cards__box:nth-child(3) {
+        margin-top: 25px;
+        order: 3;
+        height: 275px;
+       & .cards-box__link {
+        margin-top: 0;
+       }
+    }
+  }    
+
+
+@media (max-width: 1200px) {
+    .information-content__title {
+      font-size: 38px;
+    }
+  }
+
+
+
+  @media (max-width: 865px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+  }
+
+  @media (max-width: 768px) {
+    .cards {
+        display: flex;
+        flex-direction: row;
+    }
+    .cards__box {
+        gap: 20px;
+        height: 384px;
+        width: 310px;
+    }
+
+    .numbers__item {
+        padding-top: 0;
+    }
+
+    .numbers__subtitle {
+        font-weight: 500;
+    }
+
+    .information-content__title {
+        font-size: 30px;
+    }
+
+    .cards-box__text {
+        font-size: 20px;
+        letter-spacing: 2px;
+        padding-left: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+  }
+
+  
+  @media (max-width: 480px) {
+    .information-content__title {
+        font-size: 26px;
+    }
+
+    .information-content__title::before {
+        right: 20px;
+    }
+    .information-content__title::after {
+        left: 20px;
+    }
+
+    .cards-box__text {
+        font-size: 18px;
+        padding-left: 16px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+  }
+
+
+  
 
 
 

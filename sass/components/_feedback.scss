@@ -37,27 +37,14 @@
   }
 
   .background-block {
-    // background-image: url('../img/feedback/portfolio.jpg');
-    background-image: url('/img/feedback/6.jpg');
-    // background-image: url('/img/feedback/1.jpg');
-    // background-image: url('/img/feedback/2.jpg');
-    // background-image: url('/img/feedback/3.jpg');
-    // background-image: url('/img/feedback/4.jpg');
-    // background-image: url('/img/feedback/5.jpg');
+    background-image: url('../../img/проекты/02.jpg');
     background-size: cover;
     background-position: center center;
     padding: 360px 0;
+    margin-top: 50px;
     &__content {
       width: 1440px;
       margin: 0 auto;
-    }
-  }
-  
-  
-  
-  @media screen and (max-width: 768px) {
-    .swiper-navBtn {
-      display: none;
     }
   }
 
@@ -70,6 +57,40 @@
     opacity: 0.5;
     filter: blur(2px);
   }
+
+  @media (max-width: 1150px) {
+    .background-block {
+      padding: 274px 0;
+    }
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .swiper-navBtn {
+      display: none;
+    }
+
+    .background-block {
+      padding: 210px 0;
+    }
+  }
+
+
+@media (max-width: 480px) {
+  .image-content {
+    width: 80%;
+  }
+
+  .background-block {
+    padding: 140px 0;
+  }
+
+}
+
+  
+
+  
 
 
 
