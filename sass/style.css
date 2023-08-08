@@ -809,16 +809,16 @@ button:hover .learn-more__link {
   height: 275px;
 }
 .cards__box:nth-child(1) .cards-box__link:first-child {
-  background-image: url("../../img/information/05.jpg");
+  background-image: url("../img/information/05.jpg");
 }
 .cards__box:nth-child(1) .cards-box__link:last-child {
-  background-image: url("../../img/information/08.jpg");
+  background-image: url("../img/information/08.jpg");
 }
 .cards__box:nth-child(2) .cards-box__link:first-child {
-  background-image: url("../../img/information/02new.jpg");
+  background-image: url("../img/information/02new.jpg");
 }
 .cards__box:nth-child(2) .cards-box__link:last-child {
-  background-image: url("../../img/information/10.jpg");
+  background-image: url("../img/information/10.jpg");
 }
 
 .cards-box__link {
@@ -958,7 +958,7 @@ button:hover .learn-more__link {
   }
 }
 .background-block {
-  background-image: url("../../img/проекты/02.jpg");
+  background-image: url("../img/проекты/02.jpg");
   background-size: cover;
   background-position: center center;
   padding: 360px 0;
@@ -1109,6 +1109,10 @@ button:hover .learn-more__link {
   color: #018ABE;
   transition: color 0.3s;
   border-bottom: 2px solid #018ABE;
+}
+
+.footer-content__img {
+  height: 560px;
 }
 
 .google-map {
@@ -1354,7 +1358,7 @@ button:hover .learn-more__link {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 30vw;
+  width: 540px;
 }
 
 .footer-content__img {
