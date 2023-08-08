@@ -44,7 +44,7 @@
         background-image: url("../../img/information/02new.jpg");
     }
     &:nth-child(2) .cards-box__link:last-child {
-        background-image: url("../../img/information/07.jpg");
+        background-image: url("../../img/information/10.jpg");
     }
 }
 
@@ -161,6 +161,12 @@
         padding-left: 16px;
         padding-top: 6px;
         padding-bottom: 6px;
+    }
+  }
+
+  @media (max-width: 619px) {
+    .cards__box:nth-child(2) {
+        margin-top: 20px;
     }
   }
 

@@ -75,6 +75,79 @@
       padding: 210px 0;
     }
   }
+  @media (max-width: 650px) {
+
+    .background-block {
+      padding: 190px 0;
+    }
+  }
+  @media (max-width: 600px) {
+    
+
+    .background-block {
+      padding: 172px 0;
+    }
+
+    .about-us-content {
+      padding-top: 0;
+      padding-bottom: 20px;
+    }
+
+    .about-us-content__title {
+      font-size: 16px;
+    }
+
+    .about-us-content__subtitle {
+      font-size: 47px;
+      margin-top: 0;
+    }
+
+    .about-us-content__text {
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+
+    .numbers__title {
+      line-height: 77px;
+    }
+
+    .numbers__subtitle {
+      line-height: 18px;
+    }
+
+    .numbers__title {
+      height: 65px;
+    }
+
+    .about-us-content__title::before {
+      margin-right: 22px;
+    }
+
+    .about-us-content__title::after {
+      margin-left: 22px;
+    }
+
+    .information-content__title {
+      font-size: 27px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .logo__image {
+      width: 115px;
+      height: 90px;
+    }
+
+    .image-content {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 519px) {
+    .image-content {
+      width: 70%;
+    }
+  }
 
 
 @media (max-width: 480px) {
