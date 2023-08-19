@@ -87,4 +87,47 @@
     }
 }
 
+@media (max-width: 480px) {
+    .footer-content__item {
+        width: 200px;
+    }
+
+    .footer-content__title {
+        font-size: 21px;
+    }
+
+    .footer-content__link {
+        font-size: 15px;
+    }
+
+    .footer-content__list {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .google-map iframe{
+        width: 300px;
+        height: 200px;
+    }
+
+    .google-map {
+        padding-bottom: 210px;
+    }
+
+    .footer-content__block {
+        max-width: 320px;
+    }
+
+    .gm-style {
+        display: none;
+    }
+
+    .footer-content__title {
+        text-align: center;
+    }
+}
+
+
+
 
