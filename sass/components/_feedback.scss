@@ -28,13 +28,9 @@
     margin: 0 auto;
   }
   
- 
+
   
-  @media screen and (max-width: 768px) {
-    .swiper-navBtn {
-      display: none;
-    }
-  }
+ 
 
   .background-block {
     background-image: url('../img/проекты/02.jpg');
@@ -63,10 +59,18 @@
       padding: 274px 0;
     }
   }
+
+  @media (max-width: 888px) {
+    .background-block {
+      padding: 238px 0;
+    }
+   }
   
   
   
   @media (max-width: 768px) {
+
+    
     .swiper-navBtn {
       display: none;
     }
@@ -75,12 +79,21 @@
       padding: 210px 0;
     }
   }
+
+  @media(max-width:730px) {
+    .background-block {
+      padding: 140px 0;
+    }
+  }
+  
   @media (max-width: 650px) {
 
     .background-block {
       padding: 190px 0;
     }
   }
+
+  
   
 
   @media (max-width: 520px) {
@@ -107,6 +120,11 @@
     padding: 135px 0;
   }
 
+}
+@media (max-width: 420px) {
+  .background-block {
+    padding: 109px 0;
+  }
 }
 
 

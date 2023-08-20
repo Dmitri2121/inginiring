@@ -228,6 +228,14 @@ button {
   }
 }
 
+
+
+@media (max-width: 1120px) {
+  .numbers__item {
+    padding-top: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .about-us-content__subtitle {
     font-size: 52px;
@@ -311,6 +319,20 @@ button {
 }
 
 
+@media (max-width: 500px) {
+  .about-us-content__subtitle {
+    font-size: 38px;
+    line-height: 42px;
+  }
+
+  .about-us-content__text {
+    font-size: 21px;
+  }
+
+  
+}
+
+
 @media (max-width: 480px) {
 
   .about-us-content {
@@ -353,11 +375,28 @@ button {
      font-size: 10px;
      line-height: 15px;
   }
+}
 
-  .menu {
-    margin-top: 124px;
+@media (max-width: 420px) {
+  .about-us-content__subtitle {
+    font-size: 27px;
   }
 
+  .about-us-content__text {
+    font-size: 15px;
+  }
+
+  .about-us-content__title {
+    font-size: 13px;
+  }
+
+  .about-us-content__title::before {
+    margin-right: 17px;
+  }
+
+  .about-us-content__title::after {
+    margin-left: 17px;
+  }
 }
 
 

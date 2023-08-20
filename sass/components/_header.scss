@@ -218,9 +218,17 @@ body {
     width: 115px;
     height: 90px;
   }
+
+  .menu {
+    margin-top: 153px;
+  }
 }
 
 @media (max-width: 480px) {
+  .menu {
+    margin-top: 108px;
+  }
+
     .logo__image {
         width: 100px;
         height: 70px;

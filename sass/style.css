@@ -489,8 +489,14 @@ body {
     width: 115px;
     height: 90px;
   }
+  .menu {
+    margin-top: 153px;
+  }
 }
 @media (max-width: 480px) {
+  .menu {
+    margin-top: 108px;
+  }
   .logo__image {
     width: 100px;
     height: 70px;
@@ -754,6 +760,11 @@ button:hover .learn-more__link {
     font-size: 29px;
   }
 }
+@media (max-width: 1120px) {
+  .numbers__item {
+    padding-top: 0;
+  }
+}
 @media (max-width: 768px) {
   .about-us-content__subtitle {
     font-size: 52px;
@@ -813,6 +824,15 @@ button:hover .learn-more__link {
     font-size: 27px;
   }
 }
+@media (max-width: 500px) {
+  .about-us-content__subtitle {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .about-us-content__text {
+    font-size: 21px;
+  }
+}
 @media (max-width: 480px) {
   .about-us-content {
     padding-top: 10px;
@@ -847,8 +867,22 @@ button:hover .learn-more__link {
     font-size: 10px;
     line-height: 15px;
   }
-  .menu {
-    margin-top: 124px;
+}
+@media (max-width: 420px) {
+  .about-us-content__subtitle {
+    font-size: 27px;
+  }
+  .about-us-content__text {
+    font-size: 15px;
+  }
+  .about-us-content__title {
+    font-size: 13px;
+  }
+  .about-us-content__title::before {
+    margin-right: 17px;
+  }
+  .about-us-content__title::after {
+    margin-left: 17px;
   }
 }
 @media (max-width: 320px) {
@@ -969,6 +1003,19 @@ button:hover .learn-more__link {
   background-color: rgba(39, 47, 51, 0.7);
 }
 
+@media (max-width: 1270px) {
+  .cards .cards__box:last-child {
+    justify-content: center;
+    height: 275px;
+  }
+  .cards__box:nth-child(3) .cards-box__link {
+    margin-top: 0;
+  }
+  .cards {
+    justify-content: center;
+    gap: 40px;
+  }
+}
 @media (max-width: 1253px) {
   .cards {
     display: flex;
@@ -1005,6 +1052,12 @@ button:hover .learn-more__link {
     height: 384px;
     width: 310px;
   }
+  .cards {
+    gap: 20px;
+  }
+  .cards__box:nth-child(3) {
+    margin-top: 0;
+  }
   .information-content__title {
     font-size: 30px;
   }
@@ -1014,6 +1067,9 @@ button:hover .learn-more__link {
     padding-left: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .cards .cards__box:last-child {
+    height: 182px;
   }
 }
 @media (max-width: 619px) {
@@ -1042,6 +1098,14 @@ button:hover .learn-more__link {
   }
   .cards__box:nth-child(3) {
     height: 182px;
+  }
+}
+@media (max-width: 340px) {
+  .information-content__title::before {
+    right: 10px;
+  }
+  .information-content__title::after {
+    left: 10px;
   }
 }
 @media (max-width: 320px) {
@@ -1089,11 +1153,6 @@ button:hover .learn-more__link {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
-  .swiper-navBtn {
-    display: none;
-  }
-}
 .background-block {
   background-image: url("../img/проекты/02.jpg");
   background-size: cover;
@@ -1121,12 +1180,22 @@ button:hover .learn-more__link {
     padding: 274px 0;
   }
 }
+@media (max-width: 888px) {
+  .background-block {
+    padding: 238px 0;
+  }
+}
 @media (max-width: 768px) {
   .swiper-navBtn {
     display: none;
   }
   .background-block {
     padding: 210px 0;
+  }
+}
+@media (max-width: 730px) {
+  .background-block {
+    padding: 140px 0;
   }
 }
 @media (max-width: 650px) {
@@ -1150,6 +1219,11 @@ button:hover .learn-more__link {
   }
   .background-block {
     padding: 135px 0;
+  }
+}
+@media (max-width: 420px) {
+  .background-block {
+    padding: 109px 0;
   }
 }
 @media (max-width: 320px) {
@@ -1248,6 +1322,16 @@ button:hover .learn-more__link {
     font-size: 16px;
   }
 }
+@media (max-width: 515px) {
+  .footer-content__block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer-content__block {
+  max-width: 300px;
+}
+
 @media (max-width: 480px) {
   .footer-content__item {
     width: 200px;
@@ -1262,16 +1346,30 @@ button:hover .learn-more__link {
     font-size: 15px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 470px) {
   .google-map iframe {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
   }
+}
+@media (max-width: 420px) {
+  .google-map iframe {
+    width: 350px;
+    height: 250px;
+  }
+}
+@media (max-width: 370px) {
+  .google-map iframe {
+    width: 280px;
+    height: 180px;
+  }
+}
+@media (max-width: 320px) {
   .google-map {
     padding-bottom: 210px;
   }
   .footer-content__block {
-    max-width: 320px;
+    max-width: 300px;
   }
   .gm-style {
     display: none;
