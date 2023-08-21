@@ -10,7 +10,6 @@
 }
 
 
-
 .about-us-content__title {
     @include font ('Oswald', 33.6px, 24px, 700);
     letter-spacing: 1px;
@@ -33,6 +32,7 @@
     text-align: center;
     margin-bottom: 0;
 }
+
 
 .about-us-content__text {
     @include font ('Oswald', 70px, 33px, 500);
@@ -73,6 +73,60 @@
     color: $background-color;
 }
 
+.blocks-element__img {
+  border-radius: 60px;
+}
+
+
+//Выпадающий текст
+
+
+
+
+
+.info__switch {
+  display: none;
+}
+
+.info__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.info__switch:checked~.info__body {
+  max-height: 100%;
+}
+
+.info__headline::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  border: 6px solid #39739d;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.info__switch:checked~.info__headline::before {
+  transform: rotate(180deg) translateY(6px);
+}
+
+.info__headline {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  user-select: none;
+  color: #39739d;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.info__headline:hover {
+  text-decoration: underline;
+}
+
 
 //О Нас
 
@@ -81,6 +135,11 @@
 .blocks-element {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.information-content .blocks-element .blocks-element__text:nth-child(2) {
+  text-align: left;
 }
 
 
@@ -90,6 +149,7 @@
     width: 600px;
     float: left;
     object-fit:contain; 
+    border-radius: 60px;
 }
 
 .blocks-element__img_posited {
@@ -102,12 +162,11 @@
     @include font ('Oswald', 40px, 20px, 400);
     letter-spacing: 0.7px;
     color: $color-text;
-    text-align: justify;
 }
 
 .our-documents {
     margin: 0 auto;
-    width: 50vw;
+    width: 75vw;
     padding: 20px;
     border-radius: 20px;
     border: 5px solid $background-color-numbers;
@@ -122,7 +181,6 @@
     @include font ('Oswald', 27px, 17px, 700);
     letter-spacing: 0.8px;
     color: $color-text;
-    text-align: justify;
 }
 
 //Button
@@ -203,7 +261,19 @@ button {
   }
 }
 
-//Адаптив 1200px
+//Текстовое окно
+
+.more-text__link {
+  display: inline-block;
+  @include font ('Oswald', 20px, 18px, 500);
+  color: #162831;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+  &:hover {
+    color: $color-text;
+  }
+}
 
 @media (max-width: 1200px) {
   .numbers {
@@ -225,6 +295,13 @@ button {
 
   .about-us-content__text {
     font-size: 29px;
+  }
+}
+
+@media (max-width: 1335px) {
+  .information-content {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -266,6 +343,29 @@ button {
   
 }
 
+
+@media (max-width: 690px) {
+  .blocks-element__text {
+    max-width: 610px;
+  }
+}
+
+@media (max-width: 650px) {
+  .our-documents {
+    width: 90vw;
+  }
+
+  .blocks-element__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 656px) {
+  .blocks-element__img {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+}
 
 @media (max-width: 600px) {
     
@@ -329,11 +429,36 @@ button {
     font-size: 21px;
   }
 
+  .blocks-element__img {
+    border-radius: 28px;
+  }
+
+  .blocks-element__text {
+    font-size: 18px;
+  }
+
+  .our-documents__text {
+    text-align: center;
+  }
+
   
+}
+
+@media (max-width: 490px) {
+  .blocks-element__img {
+    width: 434px;
+  }
+
+  .blocks-element__text {
+    text-align: center;
+  }
 }
 
 
 @media (max-width: 480px) {
+  .blocks-element__img {
+    width: 100%;
+  }
 
   .about-us-content {
     padding-top: 10px;

@@ -615,9 +615,63 @@ body {
   color: #162831;
 }
 
+.blocks-element__img {
+  border-radius: 60px;
+}
+
+.info__switch {
+  display: none;
+}
+
+.info__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.info__switch:checked ~ .info__body {
+  max-height: 100%;
+}
+
+.info__headline::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  border: 6px solid #39739d;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.info__switch:checked ~ .info__headline::before {
+  transform: rotate(180deg) translateY(6px);
+}
+
+.info__headline {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: #39739d;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.info__headline:hover {
+  text-decoration: underline;
+}
+
 .blocks-element {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.information-content .blocks-element .blocks-element__text:nth-child(2) {
+  text-align: left;
 }
 
 .blocks-element__img {
@@ -626,6 +680,7 @@ body {
   float: left;
   -o-object-fit: contain;
      object-fit: contain;
+  border-radius: 60px;
 }
 
 .blocks-element__img_posited {
@@ -640,12 +695,11 @@ body {
   font-weight: 400;
   letter-spacing: 0.7px;
   color: #FFFFFF;
-  text-align: justify;
 }
 
 .our-documents {
   margin: 0 auto;
-  width: 50vw;
+  width: 75vw;
   padding: 20px;
   border-radius: 20px;
   border: 5px solid #018ABE;
@@ -663,7 +717,6 @@ body {
   font-weight: 700;
   letter-spacing: 0.8px;
   color: #FFFFFF;
-  text-align: justify;
 }
 
 button {
@@ -741,6 +794,21 @@ button:hover .learn-more__link {
   color: #FFFFFF;
 }
 
+.more-text__link {
+  display: inline-block;
+  font-family: "Oswald";
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #162831;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.more-text__link:hover {
+  color: #FFFFFF;
+}
+
 @media (max-width: 1200px) {
   .numbers {
     width: 80%;
@@ -758,6 +826,12 @@ button:hover .learn-more__link {
   }
   .about-us-content__text {
     font-size: 29px;
+  }
+}
+@media (max-width: 1335px) {
+  .information-content {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media (max-width: 1120px) {
@@ -784,6 +858,25 @@ button:hover .learn-more__link {
   }
   .numbers__subtitle {
     font-weight: 500;
+  }
+}
+@media (max-width: 690px) {
+  .blocks-element__text {
+    max-width: 610px;
+  }
+}
+@media (max-width: 650px) {
+  .our-documents {
+    width: 90vw;
+  }
+  .blocks-element__img {
+    width: 100%;
+  }
+}
+@media (max-width: 656px) {
+  .blocks-element__img {
+    padding: 0;
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 600px) {
@@ -832,8 +925,28 @@ button:hover .learn-more__link {
   .about-us-content__text {
     font-size: 21px;
   }
+  .blocks-element__img {
+    border-radius: 28px;
+  }
+  .blocks-element__text {
+    font-size: 18px;
+  }
+  .our-documents__text {
+    text-align: center;
+  }
+}
+@media (max-width: 490px) {
+  .blocks-element__img {
+    width: 434px;
+  }
+  .blocks-element__text {
+    text-align: center;
+  }
 }
 @media (max-width: 480px) {
+  .blocks-element__img {
+    width: 100%;
+  }
   .about-us-content {
     padding-top: 10px;
     padding-bottom: 20px;
@@ -942,6 +1055,11 @@ button:hover .learn-more__link {
   content: url("../img/information/02.svg");
   right: 60px;
   bottom: 10px;
+}
+
+.information-content {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .cards {
@@ -1154,15 +1272,25 @@ button:hover .learn-more__link {
 }
 
 .background-block {
-  background-image: url("../img/проекты/02.jpg");
   background-size: cover;
   background-position: center center;
   padding: 360px 0;
   margin-top: 50px;
+  position: relative;
 }
-.background-block__content {
-  width: 1440px;
-  margin: 0 auto;
+
+.background-block img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.background-block img.visible {
+  opacity: 1;
 }
 
 .swiper-slide {
@@ -1243,7 +1371,7 @@ button:hover .learn-more__link {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 500px;
+  max-width: 500px;
 }
 
 .footer-content__item {
@@ -1328,10 +1456,6 @@ button:hover .learn-more__link {
     align-items: center;
   }
 }
-.footer-content__block {
-  max-width: 300px;
-}
-
 @media (max-width: 480px) {
   .footer-content__item {
     width: 200px;
@@ -1381,6 +1505,7 @@ button:hover .learn-more__link {
 .block {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .our-services__item {
@@ -1396,7 +1521,6 @@ button:hover .learn-more__link {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  margin-left: 50px;
   padding-top: 110px;
 }
 
@@ -1411,6 +1535,7 @@ button:hover .learn-more__link {
   margin: 0;
   color: #FFFFFF;
   opacity: 10%;
+  padding-left: 30px;
 }
 
 .blocks__title {
@@ -1439,6 +1564,12 @@ button:hover .learn-more__link {
   height: 640px;
 }
 
+@media (max-width: 1340px) {
+  .block {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 @media (max-width: 1200px) {
   .blocks__number {
     font-size: 180px;
@@ -1449,13 +1580,70 @@ button:hover .learn-more__link {
   .blocks__text {
     font-size: 16px;
   }
-  .block {
-    display: flex;
-    justify-content: center;
-  }
   .blocks__image {
     width: 440px;
     height: 600px;
+  }
+}
+@media (max-width: 1050px) {
+  .blocks__title {
+    width: 40vw;
+  }
+  .blocks__image {
+    width: 400px;
+    height: 560px;
+  }
+}
+@media (max-width: 880px) {
+  .blocks__number {
+    font-size: 150px;
+  }
+  .blocks__title {
+    font-size: 33px;
+    line-height: 58px;
+  }
+  .blocks__image {
+    width: 300px;
+    height: 460px;
+  }
+  .blocks__number {
+    top: -38px;
+  }
+}
+@media (max-width: 660px) {
+  .blocks__number {
+    font-size: 130px;
+  }
+  .blocks__title {
+    font-size: 26px;
+    line-height: 43px;
+  }
+  .blocks__image {
+    width: 200px;
+    height: 360px;
+  }
+}
+@media (max-width: 460px) {
+  .blocks__number {
+    font-size: 105px;
+  }
+  .blocks__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .blocks__image {
+    width: 150px;
+    height: 310px;
+  }
+}
+@media (max-width: 380px) {
+  .blocks__title {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .blocks__image {
+    width: 120px;
+    height: 240px;
   }
 }
 .our-projects-content {

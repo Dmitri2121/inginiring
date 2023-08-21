@@ -9,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-    width: 500px;
+    max-width: 500px;
 }
 
 .footer-content__item {
@@ -94,9 +94,7 @@
         align-items: center;    }
 }
 
-.footer-content__block {
-    max-width: 300px;
-}
+
 
 @media (max-width: 480px) {
     .footer-content__item {
