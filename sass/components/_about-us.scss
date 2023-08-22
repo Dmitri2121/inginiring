@@ -487,7 +487,12 @@ button {
   }
 
   .numbers__item {
-      height: 80px;
+      height: 70px;
+      width: 24%;
+  }
+
+  .numbers {
+    width: 90%;
   }
 
   .numbers__title {
@@ -496,11 +501,14 @@ button {
   }
 
   .numbers__subtitle {
-      padding-top: 10px;
-     font-size: 10px;
-     line-height: 15px;
+     padding-top: 10px;
+     font-size: 8px;
+     line-height: 12px;
+     font-weight: 700;
+     letter-spacing: 0;
   }
 }
+
 
 @media (max-width: 420px) {
   .about-us-content__subtitle {

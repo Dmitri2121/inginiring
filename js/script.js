@@ -66,3 +66,6 @@ window.addEventListener("load", () => {
   }
   window.setInterval(autochange, 5000);
 });
+
+
+
