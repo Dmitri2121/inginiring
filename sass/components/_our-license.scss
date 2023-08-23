@@ -57,3 +57,47 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .blocks-documents  {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .our-license-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .blocks-documents__images {
+        width: 290px;
+    }
+
+    .blocks-documents .blocks-documents__item:nth-child(3),
+    .blocks-documents .blocks-documents__item:nth-child(4),
+    .blocks-documents .blocks-documents__item:nth-child(5) {
+        margin-right: 90px;
+    }
+
+    .blocks-documents .blocks-documents__item:nth-child(6) {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 410px) {
+    .blocks-documents__content {
+        margin-top: 0;
+    }
+
+    .blocks-documents__images {
+        width: 210px;
+    }
+}
+
+@media (max-width: 320px) {
+    .blocks-documents__images {
+        width: 200px;
+    }
+  }

@@ -39,3 +39,35 @@
     }
 }
 
+@media (max-width: 650px) {
+    .our-content {
+        flex-wrap: wrap;
+    }
+
+    .our-contacts__content {
+        order: 1;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-content__img {
+        width: 317px;
+        height: 254px;
+    }
+
+    .footer-content__item {
+        width: 177px;
+    }
+
+    .our-contacts__content .footer-content__item:last-child {
+        margin: auto;
+    }
+}
+
+@media (max-width: 360px) {
+    .footer-content__img {
+        width: 270px;
+        height: 220px;
+    }
+}
+
