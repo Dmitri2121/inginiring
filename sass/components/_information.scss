@@ -40,23 +40,23 @@
         height: 275px;
     }
     &:nth-child(1) .cards-box__link:first-child {
-        background-image: url("../img/information/05.jpg");
+        background-image: url("../img/information/03.jpg");
     }
     &:nth-child(1) .cards-box__link:last-child {
-        background-image: url("../img/information/08.jpg");
+        background-image: url("../img/information/04.jpg");
     }
     &:nth-child(2) .cards-box__link:first-child {
-        background-image: url("../img/information/02new.jpg");
+        background-image: url("../img/information/05.jpg");
     }
     &:nth-child(2) .cards-box__link:last-child {
-        background-image: url("../img/information/10.jpg");
+        background-image: url("../img/information/06.jpg");
     }
 }
 
 .cards-box__link {
     display: flex;
     align-items: end;
-    background-image: url("../img/information/01.jpg");
+    background-image: url("../img/information/07.jpg");
     background-size: cover;
     height: 275px;
     text-decoration: none;

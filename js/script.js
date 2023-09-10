@@ -36,13 +36,13 @@ swiper.on("click", function (e) {
 let index = 0;
 const projectContainer = document.querySelector(".background-block");
 const projectImages = [
-  "img/проекты/01.jpg",
-  "img/проекты/03.jpg",
-  "img/проекты/04.jpg",
-  "img/проекты/05.jpg",
-  "img/проекты/06.jpg",
-  "img/проекты/07.jpg",
-  "img/проекты/08.jpg",
+  "img/projects/01.jpg",
+  "img/projects/03.jpg",
+  "img/projects/04.jpg",
+  "img/projects/05.jpg",
+  "img/projects/06.jpg",
+  "img/projects/07.jpg",
+  "img/projects/08.jpg",
 ];
 
 projectImages.forEach((img, i) => {
