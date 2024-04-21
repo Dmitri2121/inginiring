@@ -1465,6 +1465,15 @@ button:hover .learn-more__link {
   height: 560px;
 }
 
+.footer-map {
+  position: relative;
+  overflow: hidden;
+}
+
+.map-width {
+  position: relative;
+}
+
 @media (max-width: 760px) {
   .footer-content__title {
     font-size: 23px;
