@@ -1520,7 +1520,7 @@ button:hover .learn-more__link {
 .blocks__content {
   display: flex;
   align-items: flex-end;
-  background-image: url(/img/our-services/01.jpg);
+  background-image: url(../img/our-services/01.jpg);
   width: 400px;
   height: 560px;
   border-radius: 30px;
@@ -1530,55 +1530,55 @@ button:hover .learn-more__link {
 .block .blocks__content:nth-child(2) {
   display: flex;
   align-items: flex-end;
-  background-image: url(/img/our-services/02.jpg);
+  background-image: url(../img/our-services/02.jpg);
 }
 
 .block .blocks__content:nth-child(3) {
   display: flex;
   align-items: flex-end;
-  background-image: url(/img/our-services/03.jpg);
+  background-image: url(../img/our-services/03.jpg);
 }
 
 .block .blocks__content:nth-child(4) {
   display: flex;
   align-items: flex-end;
-  background-image: url(/img/our-services/04.jpg);
+  background-image: url(../img/our-services/04.jpg);
 }
 
 .block .blocks__content:nth-child(5) {
   display: flex;
   align-items: flex-end;
-  background-image: url(/img/our-services/05.jpg);
+  background-image: url(../img/our-services/05.jpg);
 }
 
 .block .blocks__content:nth-child(6) {
   display: flex;
   align-items: flex-end;
-  background-image: url(/img/our-services/06.jpg);
+  background-image: url(../img/our-services/06.jpg);
 }
 
 .block .blocks__content:nth-child(7) {
   display: flex;
   align-items: flex-end;
-  background-image: url(/img/our-services/07.jpg);
+  background-image: url(../img/our-services/07.jpg);
 }
 
 .block .blocks__content:nth-child(8) {
   display: flex;
   align-items: flex-end;
-  background-image: url(/img/our-services/08.jpg);
+  background-image: url(../img/our-services/08.jpg);
 }
 
 .block .blocks__content:nth-child(9) {
   display: flex;
   align-items: flex-end;
-  background-image: url(/img/our-services/09.jpg);
+  background-image: url(../img/our-services/09.jpg);
 }
 
 .block .blocks__content:nth-child(10) {
   display: flex;
   align-items: flex-end;
-  background-image: url(/img/our-services/10.jpg);
+  background-image: url(../img/our-services/10.jpg);
 }
 
 .blocks__title {
@@ -2041,7 +2041,7 @@ button:hover .learn-more__link {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(/img/vacancy/01.jpg);
+  background-image: url(../img/vacancy/01.jpg);
   margin: auto;
   opacity: 0.9;
   height: 750px;
