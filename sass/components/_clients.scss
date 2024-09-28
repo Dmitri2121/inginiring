@@ -1,8 +1,7 @@
 .icon-item {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 30px;
+	gap: 75px;
 }
 
 .icon-item__img {
@@ -15,7 +14,6 @@
 		filter: grayscale(0%); 
 	}
 }
-
 @media (max-width: 1350px) {
 	.icon-item {
 		padding-left: 20px;

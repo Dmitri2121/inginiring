@@ -1101,7 +1101,6 @@ button:hover .learn-more__link {
   width: 418px;
 }
 .cards__box:nth-child(3) .cards-box__link {
-  margin-top: 150px;
   height: 275px;
 }
 .cards__box:nth-child(1) .cards-box__link:first-child {
@@ -1115,6 +1114,9 @@ button:hover .learn-more__link {
 }
 .cards__box:nth-child(2) .cards-box__link:last-child {
   background-image: url("../img/information/06.jpg");
+}
+.cards__box:nth-child(3) .cards-box__link:last-child {
+  background-image: url("../img/information/08.jpg");
 }
 
 .cards-box__link {
@@ -1146,13 +1148,6 @@ button:hover .learn-more__link {
 }
 
 @media (max-width: 1270px) {
-  .cards .cards__box:last-child {
-    justify-content: center;
-    height: 275px;
-  }
-  .cards__box:nth-child(3) .cards-box__link {
-    margin-top: 0;
-  }
   .cards {
     justify-content: center;
     gap: 40px;
@@ -1518,156 +1513,101 @@ button:hover .learn-more__link {
 }
 .block {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 25px;
-}
-
-.our-services__item {
-  font-family: "Oswald";
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: 700;
-  color: #FFFFFF;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .blocks__content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  padding-top: 110px;
+  align-items: flex-end;
+  background-image: url(/img/our-services/01.jpg);
+  width: 400px;
+  height: 560px;
+  border-radius: 30px;
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #eeeeee, 3px 2px 1px #cccccc;
 }
 
-.blocks__number {
-  position: absolute;
-  top: 2px;
-  left: -18px;
-  font-family: "Oswald";
-  line-height: 240px;
-  font-size: 215px;
-  font-weight: 700;
-  margin: 0;
-  color: #FFFFFF;
-  opacity: 10%;
-  padding-left: 30px;
+.block .blocks__content:nth-child(2) {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(/img/our-services/02.jpg);
+}
+
+.block .blocks__content:nth-child(3) {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(/img/our-services/03.jpg);
+}
+
+.block .blocks__content:nth-child(4) {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(/img/our-services/04.jpg);
+}
+
+.block .blocks__content:nth-child(5) {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(/img/our-services/05.jpg);
+}
+
+.block .blocks__content:nth-child(6) {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(/img/our-services/06.jpg);
+}
+
+.block .blocks__content:nth-child(7) {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(/img/our-services/07.jpg);
+}
+
+.block .blocks__content:nth-child(8) {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(/img/our-services/08.jpg);
+}
+
+.block .blocks__content:nth-child(9) {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(/img/our-services/09.jpg);
+}
+
+.block .blocks__content:nth-child(10) {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(/img/our-services/10.jpg);
 }
 
 .blocks__title {
+  padding-left: 25px;
+  padding-bottom: 25px;
   font-family: "Oswald";
-  line-height: 76px;
-  font-size: 56px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-top: 0;
-  color: #FFFFFF;
-  width: 47vw;
-}
-
-.blocks__text {
-  font-family: "Oswald";
-  line-height: 32px;
-  font-size: 18px;
+  line-height: 34px;
+  font-size: 24px;
   font-weight: 700;
-  margin: 0;
-  color: #FFFFFF;
-  width: 45vw;
+  letter-spacing: 1px;
 }
 
-.blocks__image {
-  width: 480px;
-  height: 640px;
-}
-
-@media (max-width: 1460px) {
-  .blocks__title {
-    margin-top: 22px;
-  }
-}
-@media (max-width: 1340px) {
+@media (max-width: 1316px) {
   .block {
-    padding-left: 20px;
-    padding-right: 20px;
+    display: flex;
+    justify-content: center;
   }
 }
-@media (max-width: 1200px) {
-  .blocks__number {
-    font-size: 180px;
-  }
-  .blocks__title {
-    font-size: 47px;
-  }
-  .blocks__text {
-    font-size: 16px;
-  }
-  .blocks__image {
-    width: 440px;
-    height: 600px;
+@media (max-width: 866px) {
+  .block {
+    display: flex;
+    justify-content: center;
   }
 }
-@media (max-width: 1050px) {
-  .blocks__title {
-    width: 40vw;
-  }
-  .blocks__image {
-    width: 400px;
-    height: 560px;
-  }
-}
-@media (max-width: 880px) {
-  .blocks__number {
-    font-size: 150px;
-  }
-  .blocks__title {
-    font-size: 33px;
-    line-height: 58px;
-  }
-  .blocks__image {
+@media (max-width: 420px) {
+  .blocks__content, .block.blocks__content:nth-child(1) {
+    background-size: cover;
     width: 300px;
     height: 460px;
-  }
-  .blocks__number {
-    top: -38px;
-  }
-}
-@media (max-width: 800px) {
-  .blocks__title {
-    margin-top: 38px;
-  }
-}
-@media (max-width: 660px) {
-  .blocks__number {
-    font-size: 130px;
-  }
-  .blocks__title {
-    font-size: 26px;
-    line-height: 43px;
-  }
-  .blocks__image {
-    width: 200px;
-    height: 360px;
-  }
-}
-@media (max-width: 460px) {
-  .blocks__number {
-    font-size: 105px;
-  }
-  .blocks__title {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .blocks__image {
-    width: 150px;
-    height: 240px;
-  }
-}
-@media (max-width: 380px) {
-  .blocks__title {
-    font-size: 17px;
-    line-height: 25px;
-  }
-  .blocks__image {
-    width: 120px;
-    height: 240px;
   }
 }
 .our-projects-content {
@@ -2060,8 +2000,7 @@ button:hover .learn-more__link {
 .icon-item {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
+  gap: 75px;
 }
 
 .icon-item__img {
@@ -2097,4 +2036,111 @@ button:hover .learn-more__link {
     width: 115px;
     height: 105px;
   }
+}
+.greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(/img/vacancy/01.jpg);
+  margin: auto;
+  opacity: 0.9;
+  height: 750px;
+}
+
+.greeting__title {
+  display: inline;
+  margin: 0 auto;
+  font-family: "Oswald";
+  line-height: 1.15px;
+  font-size: 70px;
+  font-weight: 400;
+  text-shadow: 0 3px 4px rgb(0, 0, 0);
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  margin-bottom: 56px;
+}
+
+.greeting__text {
+  text-align: center;
+  display: inline;
+  margin: 0 auto;
+  font-family: "Oswald";
+  line-height: 26px;
+  font-size: 26px;
+  font-weight: 300;
+  text-shadow: 0 2px 3px rgb(0, 0, 0);
+  color: #FFFFFF;
+  opacity: 1;
+  letter-spacing: 1px;
+}
+
+.our-team__title {
+  font-family: "Oswald";
+  line-height: 26px;
+  font-size: 44px;
+  font-weight: 300;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 70px;
+  margin-top: 150px;
+}
+
+.our-team__list {
+  font-family: Oswald;
+  font-size: 26px;
+  font-weight: 300;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.our-vacancy__img {
+  height: 700px;
+  width: 500px;
+}
+
+.our-vacancy {
+  display: flex;
+  margin-bottom: 90px;
+}
+
+.actual-vacancy__title {
+  font-family: "Oswald";
+  line-height: 26px;
+  font-size: 44px;
+  font-weight: 300;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 100px;
+  letter-spacing: 1px;
+}
+
+.our-vacancy__title {
+  font-family: "Oswald";
+  line-height: 42px;
+  font-size: 35px;
+  font-weight: 300;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+}
+
+.our-vacancy__title_mod {
+  font-family: "Oswald";
+  line-height: 26px;
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.our-vacancy__link {
+  font-family: "Oswald";
+  line-height: 32px;
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+.our-vacancy__img {
+  margin-right: 40px;
 }/*# sourceMappingURL=style.css.map */

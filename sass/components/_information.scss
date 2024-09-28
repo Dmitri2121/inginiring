@@ -36,7 +36,7 @@
     width: 418px;
     
     &:nth-child(3) .cards-box__link {
-        margin-top: 150px;
+        
         height: 275px;
     }
     &:nth-child(1) .cards-box__link:first-child {
@@ -50,6 +50,9 @@
     }
     &:nth-child(2) .cards-box__link:last-child {
         background-image: url("../img/information/06.jpg");
+    }
+    &:nth-child(3) .cards-box__link:last-child {
+        background-image: url("../img/information/08.jpg");
     }
 }
 
@@ -81,15 +84,6 @@
 
 
 @media (max-width:1270px) {
-    .cards .cards__box:last-child {
-    justify-content: center;  
-    height: 275px; 
- }
-
- .cards__box:nth-child(3) .cards-box__link {
-    margin-top: 0;
- }
-
  .cards {
     justify-content: center;
     gap: 40px;

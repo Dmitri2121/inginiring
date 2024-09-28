@@ -1,0 +1,92 @@
+.greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/img/vacancy/01.jpg);
+    margin: auto;
+    opacity: 0.9;
+   height: 750px;
+}
+
+.greeting__title {
+    display: inline;
+    margin: 0 auto;
+    @include font ('Oswald', 1.15px, 70px, 400);
+    text-shadow: 0 3px 4px rgb(0, 0, 0);
+    color: $color-text;
+    letter-spacing: 1px;
+    margin-bottom: 56px;
+}
+
+.greeting__text {
+    text-align: center;
+    display: inline;
+    margin: 0 auto;
+    @include font ('Oswald', 26px, 26px, 300);
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 1);
+    color: $color-text;
+    opacity: 1;
+    letter-spacing: 1px;
+    
+}
+
+.our-team__title {
+    @include font ('Oswald', 26px, 44px, 300);
+    text-align: center;
+    color: $color-text;
+    margin-bottom: 70px;
+    margin-top: 150px;
+}
+
+.our-team__list {
+    font-family: Oswald;
+    font-size: 26px;
+    font-weight: 300;
+    color: $color-text;
+    padding-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.our-vacancy__img {
+    height: 700px;
+    width: 500px;
+}
+
+.our-vacancy {
+    display: flex;
+    margin-bottom: 90px
+}
+
+.actual-vacancy__title {
+    @include font ('Oswald', 26px, 44px, 300);
+    text-align: center;
+    
+    color: $color-text;
+    margin-bottom: 100px;
+    letter-spacing: 1px
+}
+
+.our-vacancy__title {
+    @include font ('Oswald', 42px, 35px, 300);
+    color: $color-text;
+    letter-spacing: 2px;
+}
+
+.our-vacancy__title_mod {
+    @include font ('Oswald', 26px, 52px, 700);
+}
+
+.our-vacancy__link {
+    @include font ('Oswald', 32px, 22px, 100);
+    
+    letter-spacing: 2px;
+    color: $color-text;
+    padding-bottom: 20px;
+}
+
+.our-vacancy__img {
+    margin-right: 40px;
+}
+
+
+
