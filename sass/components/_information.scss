@@ -35,10 +35,6 @@
     height: 574px;
     width: 418px;
     
-    &:nth-child(3) .cards-box__link {
-        
-        height: 275px;
-    }
     &:nth-child(1) .cards-box__link:first-child {
         background-image: url("../img/information/03.jpg");
     }
@@ -71,6 +67,8 @@
         }
   }
 
+  
+  
 
   .cards-box__text {
     @include font('Oswald', 34px, 24px, 700);
@@ -84,10 +82,27 @@
 
 
 @media (max-width:1270px) {
- .cards {
-    justify-content: center;
-    gap: 40px;
+    .cards {
+        justify-content: space-around;
+    }
+ 
+ .cards__box_only {
+    width: 100%;
+    flex-wrap: wrap;
+    height: 275px;
+    margin-top: 30px;
  }
+
+ .cards-box__link_only {
+    align-self: center;
+    width: 418px;
+    height: 275px;
+ }
+
+  
+
+ 
+
 }
     
   @media (max-width: 1253px) {
@@ -95,14 +110,7 @@
         display: flex;
         justify-content:space-around;
     }
-    .cards__box:nth-child(3) {
-        margin-top: 25px;
-        order: 3;
-        height: 275px;
-       & .cards-box__link {
-        margin-top: 0;
-       }
-    }
+   
   }    
 
 
@@ -121,10 +129,30 @@
         align-items: center;
     }
 
+    .cards__box_only {
+        height: 100%;
+    }
+
+    .cards-box__link_only:last-child {
+        margin-top: 30px;
+    }
+
     
   }
 
   @media (max-width: 768px) {
+    .cards__box_only {
+        
+        margin: 0;
+    }
+    .cards-box__link_only {
+        width: 310px;
+        height: 182px;
+       
+    }
+    .cards-box__link_only:last-child {
+        margin-top: 0;
+    }
     .cards {
         display: flex;
         flex-direction: row;
@@ -139,9 +167,7 @@
         gap: 20px;
     }
 
-    .cards__box:nth-child(3) {
-        margin-top: 0;
-    }
+   
 
    
     .information-content__title {
@@ -156,9 +182,7 @@
         padding-bottom: 10px;
     }
 
-    .cards .cards__box:last-child {
-        height: 182px;
-    }
+    
   }
 
   @media (max-width: 619px) {
@@ -207,9 +231,7 @@
 
     
 
-    .cards__box:nth-child(3) {
-        height: 182px;
-    }
+    
   }
 
   @media (max-width: 430px) {
@@ -253,9 +275,7 @@
         padding-bottom: 0;
     }
 
-    .cards__box:nth-child(3) {
-        height: 157px;
-    }
+    
   }
 
  

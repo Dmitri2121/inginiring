@@ -22,46 +22,64 @@
     display: flex;
     align-items: flex-end;
     background-image: url(../img/our-services/02.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .block .blocks__content:nth-child(3) {
     display: flex;
     align-items: flex-end;
     background-image: url(../img/our-services/03.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .block .blocks__content:nth-child(4) {
     display: flex;
     align-items: flex-end;
     background-image: url(../img/our-services/04.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .block .blocks__content:nth-child(5) {
     display: flex;
     align-items: flex-end;
     background-image: url(../img/our-services/05.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .block .blocks__content:nth-child(6) {
     display: flex;
     align-items: flex-end;
     background-image: url(../img/our-services/06.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .block .blocks__content:nth-child(7) {
     display: flex;
     align-items: flex-end;
     background-image: url(../img/our-services/07.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .block .blocks__content:nth-child(8) {
     display: flex;
     align-items: flex-end;
     background-image: url(../img/our-services/08.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .block .blocks__content:nth-child(9) {
     display: flex;
     align-items: flex-end;
     background-image: url(../img/our-services/09.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .block .blocks__content:nth-child(10) {
     display: flex;
     align-items: flex-end;
     background-image: url(../img/our-services/10.jpg);
+    background-size: cover;
+    background-position: center;
     
 }
 
@@ -71,23 +89,36 @@
     @include font ('Oswald', 34px, 24px, 700);
     letter-spacing: 1px;
 }
-
 @media (max-width: 1316px) {
     .block {
-        display: flex;
         justify-content: center;
     }
+    
 }
-@media (max-width: 866px) {
+
+@media (max-width: 868px) {
     .block {
-        display: flex;
         justify-content: center;
     }
-}
-@media (max-width: 420px) {
-    .blocks__content, .block.blocks__content:nth-child(1) {
-        background-size: cover;
-        width: 300px;
+    .blocks__content {
+        width: 480px;
         height: 460px;
     }
+    
+}
+@media (max-width: 516px) {
+    
+    .blocks__content {
+        width: 380px;
+        height: 360px;
+    }
+    
+}
+@media (max-width: 400px) {
+    
+    .blocks__content {
+        width: 330px;
+        height: 310px;
+    }
+    
 }
