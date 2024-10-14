@@ -10,12 +10,6 @@
     width: 400px;
     height: 560px;
     border-radius: 30px;
-    text-shadow:
-    1px 0px 1px #cccccc,
-    0px 1px 1px #eeeeee,
-    2px 1px 1px #cccccc,
-    1px 2px 1px #eeeeee,
-    3px 2px 1px #cccccc;
 }
    
 .block .blocks__content:nth-child(2) {
@@ -79,15 +73,19 @@
     align-items: flex-end;
     background-image: url(../img/our-services/10.jpg);
     background-size: cover;
-    background-position: center;
-    
+    background-position: center; 
 }
 
 .blocks__title {
     padding-left: 25px;
     padding-bottom: 25px;
-    @include font ('Oswald', 34px, 24px, 700);
+    padding-top: 5px;
+    height: 146px;
+    width: 100%;
+    @include font ('Oswald', 34px, 26px, 700);
     letter-spacing: 1px;
+    background-color: rgba(39, 47, 51, 0.7);
+    color: $color-text;
 }
 @media (max-width: 1316px) {
     .block {

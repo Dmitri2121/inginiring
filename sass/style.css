@@ -1527,7 +1527,6 @@ button:hover .learn-more__link {
   width: 400px;
   height: 560px;
   border-radius: 30px;
-  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #eeeeee, 3px 2px 1px #cccccc;
 }
 
 .block .blocks__content:nth-child(2) {
@@ -1605,11 +1604,16 @@ button:hover .learn-more__link {
 .blocks__title {
   padding-left: 25px;
   padding-bottom: 25px;
+  padding-top: 5px;
+  height: 146px;
+  width: 100%;
   font-family: "Oswald";
   line-height: 34px;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   letter-spacing: 1px;
+  background-color: rgba(39, 47, 51, 0.7);
+  color: #FFFFFF;
 }
 
 @media (max-width: 1316px) {
