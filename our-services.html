@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Стройинжиниринг, проектно-строительная, проекты, Брест">
-    <meta name="description" content="Общество с ограниченной ответственностью 'Проектно-строительная группа Стройинжиниринг г.Брест'">
+    <meta name="keywords" content="стройинжиниринг, проектно-строительная, проекты, брест, услуги, наши услуги">
+    <meta name="description" content="Услуги ООО Проектно-строительная группа Стройинжиниринг">
   
     <!-- CSS -->
     <link rel="stylesheet" href="sass/style.css">
@@ -19,35 +19,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="img/favicon/favicon2.ico" type="image/x-icon">
-    <title>ООО "ПСГ Стройинжиниринг | psgsi.by"</title>
+    <title>Услуги ООО Проектно-строительная группа Стройинжиниринг</title>
   </head>
 <body>
     <header class="header">
         <div class="wrapper">
           <div class="header-content header-content__wrapper header-content_bordered">
-            <div class="logo">
-              <a href="index.html" class="logo__link"><img class="logo__image" src="img/header/01.png" alt="logo"></a>
+            <div class="logo" itemscope itemtype="http://schema.org/Organization">
+              <a href="index.html" itemprop="url" class="logo__link"><img itemprop="logo" class="logo__image" src="img/header/01.png" alt="logo"></a>
             </div>
   
             <div class="nav">
-              <ul class="nav__content">
-                <li class="nav__item">
-                  <a class="nav__link" href="index.html">Главная</a>
+              <ul class="nav__content" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li class="nav__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="nav__link" href="index.html" itemprop="item" href="https://site.com/computers" itemprop="name" itemprop="position" content="1">Главная</a>
                 </li>
-                <li class="nav__item"><a class="nav__link" href="about-us.html">О нас</a></li>
-                <li class="nav__item">
-                  <a class="nav__link" href="our-services.html">Наши услуги</a>
+                <li class="nav__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="nav__link" href="about-us.html" itemprop="item" href="https://site.com/computers" itemprop="name" itemprop="position" content="2">О нас</a>
                 </li>
-                <li class="nav__item"><a class="nav__link" href="index.html#top">Отзывы</a></li>
-                <li class="nav__item">
-                  <a class="nav__link" href="contacts.html">Контакты</a>
+                <li class="nav__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="nav__link" href="our-services.html" itemprop="item" href="https://site.com/computers" itemprop="name" itemprop="position" content="3">Наши услуги</a>
+                </li>
+                <li class="nav__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="nav__link" href="index.html#top" itemprop="item" href="https://site.com/computers" itemprop="name" itemprop="position" content="4">Отзывы</a>
+                </li>
+                <li class="nav__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="nav__link" href="contacts.html" itemprop="item" href="https://site.com/computers" itemprop="name" itemprop="position" content="5">Контакты</a>
                 </li>
               </ul>
             </div>
 
             <div class="top-nav">
     
-              <input id="menu-toggle" type="checkbox" />
+              <input id="menu-toggle" type="checkbox">
               <label class='menu-button-container' for="menu-toggle">
               <span class='menu-button'></span>
             </label>
@@ -95,95 +99,13 @@
               <span class="blocks__title">Обследование строительных конструкций зданий и сооружений</span>
             </div>
             <div class="blocks__content">
-              <span class="blocks__title">Состав и порядок разработки предпроектной (предынвестиционной) документации</span>
+              <span class="blocks__title">Предпроектная (предынвестиционная) документация</span>
             </div>
             <div class="blocks__content">
-              <span class="blocks__title">Оценка воздействия на окружающую среду</span>
+              <span class="blocks__title">Оценка воздействия на окружающую среду (ОВОС)</span>
             </div>
             
           </div>
-          
-            
-          
-          <!-- <div class="block">
-            <div class="blocks__content">
-              <h2 class="blocks__title">Проектирование кварталов застройки</h2>
-              <p class="blocks__number">01</p>
-            </div>
-            <img src="img/our-services/01.jpg" alt="" class="blocks__image">
-          </div>
-          <div class="block">
-            <img src="img/our-services/02.jpg" alt="" class="blocks__image">
-            <div class="blocks__content">
-              <h2 class="blocks__title">Проектирование зданий</h2>
-              <p class="blocks__number">02</p>
-            </div>
-          </div>
-          <div class="block">
-            <div class="blocks__content">
-              <h2 class="blocks__title">Проектирование инженерных систем</h2>
-              <p class="blocks__number">03</p>
-            </div>
-            <img src="img/our-services/03.jpg" alt="" class="blocks__image">
-          </div>
-          <div class="block">
-            <img src="img/our-services/04.jpg" alt="" class="blocks__image">
-            <div class="blocks__content">
-              <h2 class="blocks__title">Проектирование котельных</h2>
-              <p class="blocks__number">04</p>
-            </div>
-          </div>
-          <div class="block">
-            <div class="blocks__content">
-              <h2 class="blocks__title">Проектирование систем безопасности</h2>
-              <p class="blocks__number">05</p>
-            </div>
-            <img src="img/our-services/05.jpg" alt="" class="blocks__image">
-          </div>
-          <div class="block">
-            <img src="img/our-services/06.jpg" alt="" class="blocks__image">
-            <div class="blocks__content">
-              <h2 class="blocks__title">Составление смет</h2>
-              
-              <p class="blocks__number">06</p>
-            </div>
-          </div>
-          <div class="block">
-            <div class="blocks__content">
-              <h2 class="blocks__title">Дизайн интерьеров</h2>
-              <p class="blocks__number">07</p>
-            </div>
-            <img src="img/our-services/07.jpg" alt="" class="blocks__image">
-          </div>
-
-          <div class="block">
-            <img src="img/our-services/08.jpg" alt="" class="blocks__image">
-            <div class="blocks__content">
-              <h2 class="blocks__title">Обследование строительных конструкций зданий и сооружений</h2>
-              <p class="blocks__number">08</p>
-            </div>
-          </div>
-          <div class="block">
-            <div class="blocks__content">
-              <h2 class="blocks__title">Состав и порядок разработки предпроектной (предынвестиционной) документации</h2>
-              <p class="blocks__number">09</p>
-            </div>
-            <img src="img/our-services/09.jpg" alt="" class="blocks__image">
-          </div>
-
-          <div class="block">
-            <img src="img/our-services/10.jpg" alt="" class="blocks__image">
-            <div class="blocks__content">
-              <h2 class="blocks__title">Оценка воздействия на окружающую среду</h2>
-              <p class="blocks__number">10</p>
-            </div>
-          </div> -->
-
-         
-
-       
-
-          
           
         </div>
       </section>

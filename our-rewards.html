@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Стройинжиниринг, проектно-строительная, проекты, Брест">
-    <meta name="description" content="Общество с ограниченной ответственностью 'Проектно-строительная группа Стройинжиниринг г.Брест'">
+    <meta name="keywords" content="стройинжиниринг, проектно-строительная, проекты, брест, награды, достижения">
+    <meta name="description" content="Награды ООО Проектно-строительная группа Стройинжиниринг">
   
     <!-- CSS -->
     <link rel="stylesheet" href="sass/style.css">
@@ -19,35 +19,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="img/favicon/favicon2.ico" type="image/x-icon">
-    <title>ООО "ПСГ Стройинжиниринг | psgsi.by"</title>
+    <title>Награды ООО Проектно-строительная группа Стройинжиниринг</title>
   </head>
 <body>
     <header class="header">
         <div class="wrapper">
           <div class="header-content header-content__wrapper">
-            <div class="logo">
-              <a href="index.html" class="logo__link"><img class="logo__image" src="img/header/01.png" alt="logo"></a>
+            <div class="logo" itemscope itemtype="http://schema.org/Organization">
+              <a href="index.html" itemprop="url" class="logo__link"><img itemprop="logo" class="logo__image" src="img/header/01.png" alt="logo"></a>
             </div>
   
             <div class="nav">
-              <ul class="nav__content">
-                <li class="nav__item">
-                  <a class="nav__link" href="index.html">Главная</a>
+              <ul class="nav__content" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li class="nav__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="nav__link" href="index.html" itemprop="item" href="https://site.com/computers" itemprop="name" itemprop="position" content="1">Главная</a>
                 </li>
-                <li class="nav__item"><a class="nav__link" href="about-us.html">О нас</a></li>
-                <li class="nav__item">
-                  <a class="nav__link" href="our-services.html">Наши услуги</a>
+                <li class="nav__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="nav__link" href="about-us.html" itemprop="item" href="https://site.com/computers" itemprop="name" itemprop="position" content="2">О нас</a>
                 </li>
-                <li class="nav__item"><a class="nav__link" href="index.html#top">Отзывы</a></li>
-                <li class="nav__item">
-                  <a class="nav__link" href="contacts.html">Контакты</a>
+                <li class="nav__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="nav__link" href="our-services.html" itemprop="item" href="https://site.com/computers" itemprop="name" itemprop="position" content="3">Наши услуги</a>
+                </li>
+                <li class="nav__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="nav__link" href="index.html#top" itemprop="item" href="https://site.com/computers" itemprop="name" itemprop="position" content="4">Отзывы</a>
+                </li>
+                <li class="nav__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="nav__link" href="contacts.html" itemprop="item" href="https://site.com/computers" itemprop="name" itemprop="position" content="5">Контакты</a>
                 </li>
               </ul>
             </div>
 
             <div class="top-nav">
     
-              <input id="menu-toggle" type="checkbox" />
+              <input id="menu-toggle" type="checkbox">
               <label class='menu-button-container' for="menu-toggle">
               <span class='menu-button'></span>
             </label>

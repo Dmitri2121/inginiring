@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Стройинжиниринг, проектно-строительная, проекты, Брест">
-    <meta name="description" content="Общество с ограниченной ответственностью 'Проектно-строительная группа Стройинжиниринг г.Брест'">
+    <meta name="keywords" content="стройинжиниринг, проектно-строительная, проекты, брест, наши проекты">
+    <meta name="description" content="Проекты ООО Стройинжиниринг">
   
     <!-- CSS -->
     <link rel="stylesheet" href="sass/style.css">
@@ -19,28 +19,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="img/favicon/favicon2.ico" type="image/x-icon">
-    <title>ООО "ПСГ Стройинжиниринг | psgsi.by"</title>
+    <title>Проекты ООО Проектно-строительная группа Стройинжиниринг</title>
   </head>
 <body>
     <header class="header">
         <div class="wrapper">
           <div class="header-content header-content__wrapper">
-            <div class="logo">
-              <a href="index.html" class="logo__link"><img class="logo__image" src="img/header/01.png" alt="logo"></a>
+            <div class="logo" itemscope itemtype="http://schema.org/Organization">
+              <a href="index.html" itemprop="url" class="logo__link"><img itemprop="logo" class="logo__image" src="img/header/01.png" alt="logo"></a>
             </div>
   
             <div class="nav">
-              <ul class="nav__content">
-                <li class="nav__item">
-                  <a class="nav__link" href="index.html">Главная</a>
+              <ul class="nav__content" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li class="nav__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="nav__link" href="index.html" itemprop="item" href="https://site.com/computers" itemprop="name" itemprop="position" content="1">Главная</a>
                 </li>
-                <li class="nav__item"><a class="nav__link" href="about-us.html">О нас</a></li>
-                <li class="nav__item">
-                  <a class="nav__link" href="our-services.html">Наши услуги</a>
+                <li class="nav__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="nav__link" href="about-us.html" itemprop="item" href="https://site.com/computers" itemprop="name" itemprop="position" content="2">О нас</a>
                 </li>
-                <li class="nav__item"><a class="nav__link" href="index.html#top">Отзывы</a></li>
-                <li class="nav__item">
-                  <a class="nav__link" href="contacts.html">Контакты</a>
+                <li class="nav__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="nav__link" href="our-services.html" itemprop="item" href="https://site.com/computers" itemprop="name" itemprop="position" content="3">Наши услуги</a>
+                </li>
+                <li class="nav__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="nav__link" href="index.html#top" itemprop="item" href="https://site.com/computers" itemprop="name" itemprop="position" content="4">Отзывы</a>
+                </li>
+                <li class="nav__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="nav__link" href="contacts.html" itemprop="item" href="https://site.com/computers" itemprop="name" itemprop="position" content="5">Контакты</a>
                 </li>
               </ul>
             </div>
@@ -89,17 +93,12 @@
 
                 <div class="project-images project-images__content">
                     <img src="img/projects/05.jpg" alt="project-gefest" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Производственный корпус унитарного предприятия Гефест-техника</h3>
+                    <h3 class="project-images__title">Производственный корпус унитарного предприятия «Гефест-техника»</h3>
                 </div>
 
                 <div class="project-images project-images__content">
                     <img src="img/projects/06.jpg" alt="project-square" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Подсветка площадь свободы</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/07.jpg" alt="project-monument" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Памятник набережная Живая память благодарных</h3>
+                    <h3 class="project-images__title">Подсветка Площади Свободы</h3>
                 </div>
 
                 <div class="project-images project-images__content">
@@ -109,17 +108,17 @@
 
                 <div class="project-images project-images__content">
                     <img src="img/projects/09.jpg" alt="project-kopylsky-forestry" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Здание Копыльского лесничества</h3>
+                    <h3 class="project-images__title">Здание «Копыльского лесничества»</h3>
                 </div>
 
                 <div class="project-images project-images__content">
                     <img src="img/projects/10.jpg" alt="project-brestmyasomolprom" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Административное здание Брестмясомолпрома</h3>
+                    <h3 class="project-images__title">Административное здание «Брестмясомолпрома»</h3>
                 </div>
 
                 <div class="project-images project-images__content">
                     <img src="img/projects/11.jpg" alt="project-waste-recycling-plant" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Административное здание Брестского мусороперерабатывающего завода</h3>
+                    <h3 class="project-images__title">Административное здание «Брестского мусороперерабатывающего завода»</h3>
                 </div>
 
                 <div class="project-images project-images__content">
@@ -130,12 +129,12 @@
 
                 <div class="project-images project-images__content">
                     <img src="img/projects/13.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Административное здание Брестского мясокомбината</h3>
+                    <h3 class="project-images__title">Административное здание «Брестского мясокомбината»</h3>
                 </div>
 
                 <div class="project-images project-images__content">
                     <img src="img/projects/14.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Административное здание Жабинковского комбикормового завода</h3>
+                    <h3 class="project-images__title">Административное здание «Жабинковского комбикормового завода»</h3>
                 </div>
 
                 <div class="project-images project-images__content">
@@ -155,22 +154,12 @@
 
                 <div class="project-images project-images__content">
                     <img src="img/projects/18.JPG" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Производственное здание Поставского льнозавода</h3>
+                    <h3 class="project-images__title">Производственное здание «Поставского льнозавода»</h3>
                 </div>
 
                 <div class="project-images project-images__content">
                     <img src="img/projects/19.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Производственный корпус унитарного предприятия Гефест-техникасвет</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/20.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Торговый центр в г.Жабинка</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/21.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Торговый центр в г.Жабинка</h3>
+                    <h3 class="project-images__title">Производственный корпус унитарного предприятия «Гефест-техника»</h3>
                 </div>
 
                 <div class="project-images project-images__content">
@@ -190,17 +179,12 @@
 
                 <div class="project-images project-images__content">
                     <img src="img/projects/25.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Модернизация административного здания в г.Бретсе пр-т Машерова 35</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/26.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Модернизация здания проходной Бресткого мясокомбината</h3>
+                    <h3 class="project-images__title">Модернизация административного здания в г.Бресте, пр-т Машерова, 35</h3>
                 </div>
 
                 <div class="project-images project-images__content">
                     <img src="img/projects/27.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Модернизация здания проходной Бресткого мясокомбината</h3>
+                    <h3 class="project-images__title">Модернизация здания проходной «Бресткого мясокомбината»</h3>
                 </div>
 
                 <div class="project-images project-images__content">
@@ -270,10 +254,10 @@
                 <div class="text">Подсветка площадь свободы</div>
               </div>
 
-              <div class="mySlides fade">
+              <!-- <div class="mySlides fade">
                                 <img class="images-slider" alt="" src="img/projects/07.jpg">
                 <div class="text">Памятник набережная Живая память благодарных</div>
-              </div>
+              </div> -->
 
               <div class="mySlides fade">
                                 <img class="images-slider" alt="" src="img/projects/08.JPG">
