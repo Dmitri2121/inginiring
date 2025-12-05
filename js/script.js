@@ -41,8 +41,7 @@ const projectImages = [
   "img/projects/04.jpg",
   "img/projects/05.jpg",
   "img/projects/06.jpg",
-  "img/projects/07.jpg",
-  "img/projects/08.jpg",
+  "img/projects/08.JPG",
 ];
 
 projectImages.forEach((img, i) => {
