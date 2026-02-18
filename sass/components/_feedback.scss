@@ -38,13 +38,13 @@
     padding: 360px 0;
     margin-top: 50px;
     position: relative;
-    margin-left: 17%;
+    margin-left: 23%;
   }
 
   .background-block img {
     position: absolute;
-    width: 80%;
-    height: 100%;
+    width: 70%;
+    height: 90%;
     top: 0;
     left: 0;
     opacity: 0;
@@ -68,7 +68,14 @@
   @media (max-width: 1150px) {
     .background-block {
       padding: 274px 0;
+      margin-left: 12%;
     }
+
+    .background-block img {
+      width: 87%;
+    }
+
+
   }
 
   @media (max-width: 888px) {
@@ -112,6 +119,14 @@
 
     .image-content {
       width: 100%;
+    }
+
+    .background-block {
+      margin-left: 2%;
+    }
+
+    .background-block img{
+      width: 98%;
     }
   }
 

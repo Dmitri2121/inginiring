@@ -18,7 +18,7 @@
 }
 
 .project-images__title {
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     @include font ('Oswald', 30px, 23px, 700);
     color: $color-text;
@@ -29,7 +29,9 @@
     margin-bottom: 40px;
 }
 
-
+.modal-block {
+  display: block;
+}
  /* Стили для модального окна */
  .modal {
     display: none;
@@ -50,19 +52,25 @@
     /* Черный цвет с прозрачностью */
 }
 
+.close {
+  display: block;
+  height: 0;
+}
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 95%;
-    position: absolute;
-    top: 20vh;
-    left: 2.35vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 95%;
+    // position: absolute;
+    // left: 2.35vw;
 }
 
 .modal-content__img {
-    width: 100%;
+    width: 70vh;
     height: auto;
 }
+
 
 .slideshow-container {
     display: none;

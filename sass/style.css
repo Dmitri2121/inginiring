@@ -1319,13 +1319,13 @@ button:hover .learn-more__link {
   padding: 360px 0;
   margin-top: 50px;
   position: relative;
-  margin-left: 17%;
+  margin-left: 23%;
 }
 
 .background-block img {
   position: absolute;
-  width: 80%;
-  height: 100%;
+  width: 70%;
+  height: 90%;
   top: 0;
   left: 0;
   opacity: 0;
@@ -1349,6 +1349,10 @@ button:hover .learn-more__link {
 @media (max-width: 1150px) {
   .background-block {
     padding: 274px 0;
+    margin-left: 12%;
+  }
+  .background-block img {
+    width: 87%;
   }
 }
 @media (max-width: 888px) {
@@ -1377,6 +1381,12 @@ button:hover .learn-more__link {
 @media (max-width: 520px) {
   .image-content {
     width: 100%;
+  }
+  .background-block {
+    margin-left: 2%;
+  }
+  .background-block img {
+    width: 98%;
   }
 }
 @media (max-width: 519px) {
@@ -1601,6 +1611,46 @@ button:hover .learn-more__link {
   background-position: center;
 }
 
+.block .blocks__content:nth-child(11) {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(../img/our-services/11.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.block .blocks__content:nth-child(12) {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(../img/our-services/12.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.block .blocks__content:nth-child(13) {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(../img/our-services/13.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.block .blocks__content:nth-child(14) {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(../img/our-services/14.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.block .blocks__content:nth-child(15) {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(../img/our-services/15.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .blocks__title {
   padding-left: 25px;
   padding-bottom: 25px;
@@ -1662,7 +1712,7 @@ button:hover .learn-more__link {
 }
 
 .project-images__title {
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
   font-family: "Oswald";
   line-height: 30px;
@@ -1674,6 +1724,10 @@ button:hover .learn-more__link {
 
 .project-images__content {
   margin-bottom: 40px;
+}
+
+.modal-block {
+  display: block;
 }
 
 /* Стили для модального окна */
@@ -1696,17 +1750,20 @@ button:hover .learn-more__link {
   /* Черный цвет с прозрачностью */
 }
 
-.modal-content {
-  margin: auto;
+.close {
   display: block;
-  width: 95%;
-  position: absolute;
-  top: 20vh;
-  left: 2.35vw;
+  height: 0;
+}
+
+.modal-content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content__img {
-  width: 100%;
+  width: 70vh;
   height: auto;
 }
 

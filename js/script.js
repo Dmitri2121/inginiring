@@ -36,12 +36,16 @@ swiper.on("click", function (e) {
 let index = 0;
 const projectContainer = document.querySelector(".background-block");
 const projectImages = [
-  "img/projects/01.jpg",
-  "img/projects/03.jpg",
-  "img/projects/04.jpg",
-  "img/projects/05.jpg",
-  "img/projects/06.jpg",
-  "img/projects/08.JPG",
+  "img/slider-image/01.jpg",
+  "img/slider-image/02.jpg",
+  "img/slider-image/03.jpg",
+  "img/slider-image/04.jpg",
+  "img/slider-image/05.jpg",
+  "img/slider-image/06.JPG",
+  "img/slider-image/07.JPG",
+  "img/slider-image/08.JPG",
+  "img/slider-image/09.JPG",
+  "img/slider-image/10.JPG",
 ];
 
 projectImages.forEach((img, i) => {
