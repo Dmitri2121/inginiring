@@ -15,3 +15,9 @@ function hideModal() {
 document.addEventListener("keydown", () => {
   hideModal();
 });
+
+
+
+// НОВОЕ
+  
+      

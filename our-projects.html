@@ -67,479 +67,91 @@
         </div>
       </header>
 
-      <section class="our-projects">
-        <div class="wrapper">
-            <h2 class="information-content__title">НАШИ ПРОЕКТЫ</h2>
-            <div class="our-projects-content">
-                <div class="project-images project-images__content">
-                    <img src="img/projects/01.jpg" alt="coffee-project" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Кафе сети ресторанов VENEZIA</h3>
-                </div>
+    
+<section>
+  
+  <h2 class="information-content__title">Наши проекты</h2>
 
-                <div class="project-images project-images__content">
-                    <img src="img/projects/02.jpg" alt="brest-project" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Торговый центр <br> на ул.Махновича в г.Бресте</h3>
-                </div>
 
-                <div class="project-images project-images__content">
-                    <img src="img/projects/03.jpg" alt="project-square" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Подсветка памятника <br> на площади Свободы</h3>
-                </div>
+    
 
-                <div class="project-images project-images__content">
-                    <img src="img/projects/04.jpg" alt="project-shopping-centre" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Торговый центр в г.Жабинка</h3>
-                </div>
+    <div class="masonry-grid" id="projectsContainer"></div>
 
-                <div class="project-images project-images__content">
-                    <img src="img/projects/05.jpg" alt="project-gefest" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Производственный корпус унитарного предприятия «Гефест-техника»</h3>
-                </div>
+    <!-- Модальное окно -->
 
-                <div class="project-images project-images__content">
-                    <img src="img/projects/06.jpg" alt="project-square" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Подсветка площади Свободы</h3>
-                </div>
+    <div class="modal" id="projectModal">
 
-                <div class="project-images project-images__content">
-                    <img src="img/projects/08.JPG" alt="project-kamenyuki" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Агроэкотуристический городок <br> в аг.Каменюки</h3>
-                </div>
+        <div class="modal-content">
 
-                <div class="project-images project-images__content">
-                    <img src="img/projects/09.jpg" alt="project-kopylsky-forestry" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Здание Копыльского лесничества</h3>
-                </div>
+            <button class="modal-close" onclick="closeProjectModal()">×</button>
 
-                <div class="project-images project-images__content">
-                    <img src="img/projects/10.jpg" alt="project-brestmyasomolprom" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Административное здание <br> концерна Брестмясомолпрома</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/11.jpg" alt="project-waste-recycling-plant" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Административное здание <br> Брестского мусороперерабатывающего завода</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/13.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Административное здание <br> Брестского мясокомбината</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/14.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Административное здание <br> Жабинковского комбикормового завода</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/15.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Жилой дом в г.п.Ружаны</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                  <img src="img/projects/16.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                  <h3 class="project-images__title">Многоквартирный жилой дом с подземной автостоянкой в исторической части г.Бреста</h3>
-              </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/17.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Многофункциональное здание со встроенным паркингом в г.Бресте</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/18.JPG" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Производственное здание <br> Поставского льнозавода</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/19.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Производственный корпус унитарного предприятия Гефест-техника</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/22.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Торговый центр в г.Жабинка</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/23.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Столовая в г.Севск, <br> в Брянской области</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/24.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Транспортный участок <br> по ул. Ковельская в г.Бресте</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/25.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Модернизация административного здания в г.Бресте, пр-т Машерова, 35</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/27.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Модернизация здания проходной <br> Брестского мясокомбината</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/28.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Спалный корпус санатория Солнечный со СПА-зоной, рестораном</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/29.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Спалный корпус санатория Солнечный со СПА-зоной, рестораном</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/30.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Строительство грузового автосервиса <br> и кафе в районе аг.Черни</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/31.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Памятный знак «Живая память благодарных поколений» <br> в Брестской крепости</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/32.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Памятный знак «Живая память благодарных поколений» <br> в Брестской крепости</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/33.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Модернизация административного здания в г.Бресте, пр-т Машерова, 35</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/34.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Модернизация административного здания в г.Бресте, пр-т Машерова, 35</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/35.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Производственное здание ООО «БелИнтерМаркет» в г. Бресте</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/36.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Складское здание БелИнэко <br> р-н Аэропорта г. Бреста</h3>
-                </div>
-
-              <div class="project-images project-images__content">
-                    <img src="img/projects/37.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Модернизация кинотеатра Беларусь (концепция)</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/38.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Фонтан в районе гостиницы Интурист в г. Бресте</h3>
-                </div>
-
-                <div class="project-images project-images__content">
-                    <img src="img/projects/39.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Фонтан в районе гостиницы Интурист в г. Бресте</h3>
-                </div>
-                <div class="project-images project-images__content">
-                    <img src="img/projects/40.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Производственное здание «ООО КОМПО»</h3>
-                </div>
-                <div class="project-images project-images__content">
-                    <img src="img/projects/41.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Учебный корпус Ляховичского аграрного колледжа</h3>
-                </div>
-                <div class="project-images project-images__content">
-                    <img src="img/projects/42.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Строительство встроенного АБК в сборочном цеху «ООО ЗИС» г.Москва</h3>
-                </div>
-                
-                <div class="project-images project-images__content">
-                    <img src="img/projects/43.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Реконструкция профилактория «АСБ Санаторий Солнечный»</h3>
-                </div>
-                <div class="project-images project-images__content">
-                    <img src="img/projects/44.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Реконструкция профилактория «АСБ Санаторий Солнечный»</h3>
-                </div>
-                <div class="project-images project-images__content">
-                    <img src="img/projects/45.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Реконструкция здания бассейна «АСБ Санаторий Солнечный»</h3>
-                </div>
-                <div class="project-images project-images__content">
-                    <img src="img/projects/46.jpg" alt="" class="project-images__image" onclick="displayModal(this);">
-                    <h3 class="project-images__title">Реконструкция здания бассейна «АСБ Санаторий Солнечный»</h3>
-                </div>
-                
-            </div>
-              <div id="modal" class="modal" onclick="hideModal();">
-              <span class="close">&times;</span>
-              <div class="modal-block">
-                <div class="modal-content">
-                <img class="modal-content__img" id="modal-image" src="img/projects/01.jpg" alt="">
-              </div>
-              </div>
-              
-            </div>
-
-            <!-- Slideshow container -->
-
-            <div class="slideshow-container">
-
-              <div class="mySlides fade">
-                                <img class="images-slider" alt="" src="img/projects/01.jpg">
-                <div class="text">Кафе сети ресторанов VENEZIA</div>
-              </div>
-
-              <div class="mySlides fade">
-                                <img class="images-slider" alt="" src="img/projects/02.jpg">
-                <div class="text">Торговый центр <br> на ул.Махновича в г.Бресте</div>
-              </div>
-
-              <div class="mySlides fade">
-                                <img class="images-slider" alt="" src="img/projects/03.jpg">
-                <div class="text">Подсветка памятника <br> на площади Свободы</div>
-              </div>
-
-              <div class="mySlides fade">
-                                <img class="images-slider" alt="" src="img/projects/04.jpg">
-                <div class="text">Торговый центр в г.Жабинка</div>
-              </div>
-
-              <div class="mySlides fade">
-                                <img class="images-slider" alt="" src="img/projects/05.jpg">
-                <div class="text">Производственный корпус унитарного предприятия «Гефест-техника</div>
-              </div>
-
-              <div class="mySlides fade">
-                                <img class="images-slider" alt="" src="img/projects/06.jpg">
-                <div class="text">Подсветка площади Свободы</div>
-              </div>
-
-              <div class="mySlides fade">
-                                <img class="images-slider" alt="" src="img/projects/08.JPG">
-                <div class="text">Агроэкотуристический городок <br> в аг.Каменюки</div>
-              </div>
-
-              <div class="mySlides fade">
-                                <img class="images-slider" alt="" src="img/projects/09.jpg">
-                <div class="text">Здание Копыльского лесничества</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/10.jpg">
-                <div class="text">Административное здание <br> концерна Брестмясомолпрома</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/11.jpg">
-                <div class="text">Административное здание <br> Брестского мусороперерабатывающего завода</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/13.jpg">
-                <div class="text">Административное здание <br> Брестского мясокомбината</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/14.jpg">
-                <div class="text">Административное здание <br> Жабинковского комбикормового завода</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/15.jpg">
-                <div class="text">Жилой дом в г.п.Ружаны</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/16.jpg">
-                <div class="text">Многоквартирный жилой дом с подземной автостоянкой в исторической части г.Бреста</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/17.jpg">
-                <div class="text">Многофункциональное здание со встроенным паркингом в г.Бресте</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/18.JPG">
-                <div class="text">Производственное здание <br> Поставского льнозавода</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/19.jpg">
-                <div class="text">Производственный корпус унитарного предприятия Гефест-техника</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/22.jpg">
-                <div class="text">Торговый центр в г.Жабинка</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/23.jpg">
-                <div class="text">Столовая в г.Севск, <br> в Брянской области</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/24.jpg">
-                <div class="text">Транспортный участок <br> по ул. Ковельская в г.Бресте</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/25.jpg">
-                <div class="text">Модернизация административного здания в г.Бресте, пр-т Машерова, 35</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/27.jpg">
-                <div class="text">Модернизация здания проходной <br> Брестского мясокомбината</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/28.jpg">
-                <div class="text">Спалный корпус санатория Солнечный со СПА-зоной, рестораном</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/29.jpg">
-                <div class="text">Спалный корпус санатория Солнечный со СПА-зоной, рестораном</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/30.jpg">
-                <div class="text">Строительство грузового автосервиса <br> и кафе в районе аг.Черни</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/31.jpg">
-                <div class="text">Памятный знак «Живая память благодарных поколений» <br> в Брестской крепости</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/32.jpg">
-                <div class="text">Памятный знак «Живая память благодарных поколений» <br> в Брестской крепости</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/33.jpg">
-                <div class="text">Модернизация административного здания в г.Бресте, пр-т Машерова, 35</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/34.jpg">
-                <div class="text">Модернизация административного здания в г.Бресте, пр-т Машерова, 35</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/35.jpg">
-                <div class="text">Производственное здание ООО «БелИнтерМаркет» в г. Бресте</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/36.jpg">
-                <div class="text">Складское здание БелИнэко <br> р-н Аэропорта г. Бреста</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/37.jpg">
-                <div class="text">Модернизация кинотеатра Беларусь (концепция)</div>
-              </div>
-              <div class="mySlides fade">
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/38.jpg">
-                <div class="text">Фонтан в районе гостиницы Интурист в г.Бресте</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/39.jpg">
-                <div class="text">Фонтан в районе гостиницы Интурист в г. Бресте-2</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/40.jpg">
-                <div class="text">Производственное здание «ООО КОМПО»</div>
-              </div>
-              <div class="mySlides fade">
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/40 - 1.jpg">
-                <div class="text">Производственное здание «ООО КОМПО»</div>
-              </div>
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/41.jpg">
-                <div class="text">Учебный корпус Ляховичского аграрного колледжа</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/42.jpg">
-                <div class="text">Строительство встроенного АБК в сборочном цеху «ООО ЗИС» г.Москва</div>
-              </div>
-
-              
-                
-                <img class="images-slider" alt="" src="img/projects/43.jpg">
-                <div class="text">Реконструкция профилактория «АСБ Санаторий Солнечный</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/44.jpg">
-                <div class="text">Реконструкция профилактория «АСБ Санаторий Солнечный</div>
-              </div>
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/45.jpg">
-                <div class="text">Реконструкция здания бассейна «АСБ Санаторий Солнечный»</div>
-              </div>
-
-              <div class="mySlides fade">
-                
-                <img class="images-slider" alt="" src="img/projects/46.jpg">
-                <div class="text">Реконструкция здания бассейна «АСБ Санаторий Солнечный»</div>
-              </div>
-
-              
-
-              
-            </div>
-            <!-- Next and previous buttons -->
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
             
 
-        </div>
-      </section>
+            <!-- Стрелки навигации -->
 
+            <button class="modal-nav prev" onclick="changeProjectImage(-1)">‹</button>
+
+            <button class="modal-nav next" onclick="changeProjectImage(1)">›</button>
+
+            
+
+            <div class="modal-image">
+
+                <img id="modalProjectImage" src="" alt="Project">
+
+            </div>
+
+            <div class="modal-info">
+
+                <h3 id="modalProjectTitle"></h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+
+    <div class="masonry-grid" id="projectsContainer"></div>
+
+    <!-- Модальное окно -->
+
+    <div class="modal" id="projectModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" onclick="closeProjectModal()">×</button>
+
+            
+
+            <!-- Стрелки навигации -->
+
+            <button class="modal-nav prev" onclick="changeProject(-1)">‹</button>
+
+            <button class="modal-nav next" onclick="changeProject(1)">›</button>
+
+            
+
+            <div class="modal-image">
+
+                <img id="modalProjectImage" src="" alt="Project">
+
+            </div>
+
+            <div class="modal-info">
+
+                <h3 id="modalProjectTitle"></h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    
       <footer class="footer"itemscope itemtype="http://schema.org/LocalBusiness">
     <div class="wrapper">
       <div class="information-content">
@@ -585,5 +197,6 @@
 
       <!-- JavaScript -->
       <script src="js/modal.js"></script>
+      <script src="js/projects.js"></script>
 </body>
 </html>
